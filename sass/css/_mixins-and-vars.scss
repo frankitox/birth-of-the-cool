@@ -1,9 +1,9 @@
 @charset "UTF-8";
 
 $chunk:      16px;
-$dark-blue:  #00476f;
+$dark-blue:  #00476F;
 $blue:       #006AA4;
-$light-blue: #009bee;
+$light-blue: #009BEE;
 
 
 @mixin button-pill ($color) {
@@ -18,7 +18,14 @@ $light-blue: #009bee;
 }
 
 /// Uses $light-blue
-@mixin light-up() {
+@mixin light-up () {
   background-color: $light-blue;
   @include transition (background-color 1s);
 }
+
+@mixin menu () {
+  & li {
+    list-style: none; }
+  
+  & li, & li a {
+    display: inline-block; } }

@@ -1,6 +1,24 @@
 @charset "UTF-8";
 
 #footer-wrapper {
-  background-color: $light-blue;
-}
+  padding: $chunk*2 $chunk*2.5;
+  background-color: $blue;
+  color: white; }
 
+#footer .block-menu h2 {
+  display: none; }
+
+#footer .menu {
+  @include menu ();
+
+  & li {
+    // todo: find out why I have to clean
+    // this?
+    margin: 0;
+    padding: 0; }
+  & li a {
+    border-right: 1px solid white;
+    padding: 0 $chunk; }
+  & li.last a {
+    border-right: 0; }
+}
