@@ -28,7 +28,8 @@ function birthofcool_preprocess_html(&$variables) {
 }
 
 /**
- * Override or insert variables into the page template for HTML output.
+ * Override or insert variables into the page
+ * template for HTML output.
  */
 function birthofcool_process_html(&$variables) {
   // Hook into color.module.

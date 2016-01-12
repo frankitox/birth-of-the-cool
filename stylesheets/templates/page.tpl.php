@@ -1,12 +1,13 @@
 <?php
 
 /**
- * @file
- * Bartik's theme implementation to display a single Drupal page.
+ * @file Bartik's theme implementation to
+ * display a single Drupal page.
  *
- * The doctype, html, head and body tags are not in this template. Instead they
- * can be found in the html.tpl.php template normally located in the
- * modules/system directory.
+ * The doctype, html, head and body tags are
+ * not in this template. Instead they can be
+ * found in the html.tpl.php template normally
+ * located in the modules/system directory.
  *
  * Available variables:
  *
@@ -72,6 +73,7 @@
  * - $page['triptych_first']: Items for the first triptych.
  * - $page['triptych_middle']: Items for the middle triptych.
  * - $page['triptych_last']: Items for the last triptych.
+ * - $page['pre_footer']: Items for the footer region.
  * - $page['f_firstcolumn']: Items for the first footer column.
  * - $page['f_secondcolumn']: Items for the second footer column.
  * - $page['f_thirdcolumn']: Items for the third footer column.
@@ -223,6 +225,12 @@
     <?php endif; ?>
 
   </div></div> <!-- /#main, /#main-wrapper -->
+
+  <?php if ($page['pre_footer']): ?>
+  <div id="pre-footer" class="clearfix">
+    <?php print render($page['pre_footer']); ?>
+  </div>
+  <?php endif; ?>
 
   <?php if ($page['triptych_first'] || $page['triptych_middle'] || $page['triptych_last']): ?>
     <div id="triptych-wrapper"><div id="triptych" class="clearfix">

@@ -31,6 +31,7 @@ regions[triptych_first]  = Triptych first
 regions[triptych_middle] = Triptych middle
 regions[triptych_last]   = Triptych last
 
+regions[pre_footer]     = Pre Footer
 regions[f_firstcolumn]  = Footer first column
 regions[f_secondcolumn] = Footer second column
 regions[f_thirdcolumn]  = Footer third column
