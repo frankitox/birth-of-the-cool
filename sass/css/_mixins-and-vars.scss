@@ -1,0 +1,24 @@
+@charset "UTF-8";
+
+$chunk:      16px;
+$dark-blue:  #00476f;
+$blue:       #006AA4;
+$light-blue: #009bee;
+
+
+@mixin button-pill ($color) {
+  padding: $chunk/2 $chunk*3/4;
+  border: 1px solid $color;
+  background-color: $color;
+  border-radius: .5rem;
+  
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+/// Uses $light-blue
+@mixin light-up() {
+  background-color: $light-blue;
+  @include transition (background-color 1s);
+}

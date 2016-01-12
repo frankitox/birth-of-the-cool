@@ -1,0 +1,38 @@
+; This is an info file: https://goo.gl/c6Tb6d
+
+; Basic Stuff
+
+name        = BirthOfCool
+description = LCC Theme.
+package     = Core
+version     = 0.0.1
+core        = 7.x
+
+; CSS files. https://goo.gl/0oSESP
+; <all> means to be used in all media types.
+
+stylesheets[all][] = css/basis.css
+
+; Regions definition. Syntax:
+; regions[machine_name] = Readable Name
+
+regions[header]      = Header
+regions[help]        = Help
+regions[page_top]    = Page top
+regions[page_bottom] = Page bottom
+regions[highlighted] = Highlighted
+
+regions[featured]       = Featured
+regions[content]        = Content
+regions[sidebar_first]  = Sidebar first
+regions[sidebar_second] = Sidebar second
+
+regions[triptych_first]  = Triptych first
+regions[triptych_middle] = Triptych middle
+regions[triptych_last]   = Triptych last
+
+regions[f_firstcolumn]  = Footer first column
+regions[f_secondcolumn] = Footer second column
+regions[f_thirdcolumn]  = Footer third column
+regions[f_fourthcolumn] = Footer fourth column
+regions[footer]         = Footer

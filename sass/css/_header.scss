@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+#header {
+  position: relative;
+  color: white;
+  background-color: $blue;
+}
+
+#logo-and-text {
+  padding: $chunk*2 $chunk*1.5;
+  line-height: 1.25; }
+
+#logo {
+  display: inline-block;
+  margin-right: $chunk*1.5; }
+
+#name-and-slogan {
+  display: inline-block; }
+
+#main-menu ul li {
+  display: inline-block;
+  margin-right: $chunk/4;
+  background-color: $dark-blue;
+
+  &.active {
+    background-color: $light-blue; } }
+
+#main-menu ul li a {
+  display: inline-block;
+  padding: $chunk/2 $chunk; }
+
+#main-menu ul li a:hover {
+  @include light-up (); }
+
+#secondary-menu {
+  position: absolute;
+  top: 0;
+  right: 0; }
+
+#secondary-menu ul li {
+  display: inline-block;
+  margin-right: $chunk/4;
+  background-color: $dark-blue;
+
+  &.active {
+    background-color: $light-blue; } }
+
+#secondary-menu ul li a {
+  display: inline-block;
+  padding: $chunk/2 $chunk; }
+
+#secondary-menu ul li:hover {
+  @include light-up (); }
