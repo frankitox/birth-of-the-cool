@@ -1,8 +1,36 @@
 <?php
 
 /**
+  * Add hook for menu block
+  */
+function birthofcool_theme
+    (&$existing, $type, $theme, $path) {
+  
+  $hooks['user_login_block'] = array(
+    'template' => 'templates/user-login-block',
+    'render element' => 'form',
+  );
+  return $hooks;
+}
+
+/**
+  * Add variables to the user login block.
+  */
+function birthofcool_preprocess_user_login_block
+    (&$vars) {
+  
+  $vars['name']     =
+    render($vars['form']['name']);
+  $vars['pass']     =
+    render($vars['form']['pass']);
+  $vars['submit']   =
+    render($vars['form']['actions']['submit']);
+  $vars['rendered'] =
+    drupal_render_children($vars['form']); }
+
+/**
  * Add body classes if certain regions have
-   content.
+ * content.
  */
 function birthofcool_preprocess_html(&$variables) {
   if (!empty($variables['page']['featured'])) {

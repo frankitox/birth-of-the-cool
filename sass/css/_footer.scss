@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 #footer-wrapper {
-  padding: $chunk*2 $chunk*2.5;
+  padding: $chunk*2 $chunk*3;
   background-color: $blue;
   color: white; }
 
@@ -19,6 +19,8 @@
   & li a {
     border-right: 1px solid white;
     padding: 0 $chunk; }
+  & li.first a {
+    padding-left: 0; }
   & li.last a {
     border-right: 0; }
 }

@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+$menu-width: 170px;
+$login: "#pre-footer .block-user";
+
+#pre-footer {
+  padding: $chunk*2 $chunk*3;
+  background-color: $dark-blue;
+  color: white; }
+
+#{$login} > h2 {
+  display: none; }
+
+#{$login} h2 {
+  font-weight: bold; }
+
+#{$login} .form-item {
+  margin: $chunk*.5 0; }
+
+#{$login} label[for=edit-name],
+#{$login} label[for=edit-pass] {
+  display: none; }
+
+#{$login} input[type=text],
+#{$login} input[type=password],
+#{$login} input[type=submit] {
+  width: $menu-width;
+  padding: $chunk*.25 $chunk*.5;
+  border: 0;
+  color: #333;
+  box-sizing: content-box; }
+
+#{$login} input[type=submit] {
+  margin-bottom: $chunk*.75;
+  background-color: $blue;
+  color: white;
+  text-transform: uppercase; }
+
+// Request new pass section
+#{$login} .item-list {
+  font-size: 12px;
+  @include style-anchors ();
+  ul, li {
+    margin: 0; } }
+
+// Hide form actions margin.
+#{$login} .form-actions {
+  margin: 0; }
