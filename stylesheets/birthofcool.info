@@ -11,7 +11,7 @@ core        = 7.x
 ; CSS files. https://goo.gl/0oSESP
 ; <all> means to be used in all media types.
 
-stylesheets[all][] = css/basis.css
+stylesheets[all][] = screen.css
 
 ; Regions definition. Syntax:
 ; regions[machine_name] = Readable Name

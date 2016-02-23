@@ -2,11 +2,11 @@
 
 #header {
   position: relative;
+  padding: $chunk*2 $chunk*1.5;
   color: white;
   background-color: $blue; }
 
 #logo-and-text {
-  padding: $chunk*2 $chunk*1.5;
   line-height: 1.25; }
 
 #logo {

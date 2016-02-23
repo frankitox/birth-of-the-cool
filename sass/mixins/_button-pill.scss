@@ -1,0 +1,17 @@
+@mixin button-pill ($color) {
+  display: inline-block;
+  padding: $chunk/3 $chunk*3/4;
+  padding-bottom: 0;
+  border: 2px solid $color;
+  color: white;
+  background-color: $color;
+  border-radius: .5rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  
+  &:hover {
+    background-color: transparent;
+    color: $color; }
+  &:after {
+    content: '»'; }
+}

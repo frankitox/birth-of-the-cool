@@ -1,0 +1,8 @@
+body {
+  font-family: sans-serif; }
+
+// Buttons.
+.button {
+  @include button-pill ($light-blue); }
+.button-dark-blue {
+  @include button-pill ($dark-blue); }

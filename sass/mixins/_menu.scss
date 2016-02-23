@@ -1,0 +1,6 @@
+@mixin menu () {
+  & li {
+    list-style: none; }
+  
+  & li, & li a {
+    display: inline-block; } }
