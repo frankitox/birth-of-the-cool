@@ -126,45 +126,51 @@ body {
 /* line 3, ../sass/partials/_header.scss */
 #header {
   position: relative;
-  padding: 32px 24px;
+  padding-top: 24px;
+  padding-left: 2.75em;
+  padding-right: 24px;
   color: white;
   background-color: #006AA4;
 }
 
-/* line 9, ../sass/partials/_header.scss */
+/* line 11, ../sass/partials/_header.scss */
 #logo-and-text {
+  padding-bottom: 1em;
   line-height: 1.25;
 }
 
-/* line 12, ../sass/partials/_header.scss */
+/* line 15, ../sass/partials/_header.scss */
 #logo {
   display: inline-block;
+  padding-right: 2em;
+  border-right: 2px solid white;
   margin-right: 24px;
 }
 
-/* line 16, ../sass/partials/_header.scss */
+/* line 21, ../sass/partials/_header.scss */
 #name-and-slogan {
   display: inline-block;
+  font-size: 14px;
 }
 
-/* line 19, ../sass/partials/_header.scss */
+/* line 25, ../sass/partials/_header.scss */
 #main-menu ul li {
   display: inline-block;
   margin-right: 4px;
   background-color: #00476F;
 }
-/* line 24, ../sass/partials/_header.scss */
+/* line 30, ../sass/partials/_header.scss */
 #main-menu ul li.active {
   background-color: #009BEE;
 }
 
-/* line 27, ../sass/partials/_header.scss */
+/* line 33, ../sass/partials/_header.scss */
 #main-menu ul li a {
   display: inline-block;
-  padding: 8px 16px;
+  padding: .75em 1.5em;
 }
 
-/* line 31, ../sass/partials/_header.scss */
+/* line 37, ../sass/partials/_header.scss */
 #main-menu ul li a:hover {
   background-color: #009BEE;
   -moz-transition: background-color 1s;
@@ -173,37 +179,42 @@ body {
   transition: background-color 1s;
 }
 
-/* line 34, ../sass/partials/_header.scss */
+/* line 40, ../sass/partials/_header.scss */
 #secondary-menu {
   position: absolute;
   top: 0;
   right: 0;
 }
 
-/* line 39, ../sass/partials/_header.scss */
+/* line 45, ../sass/partials/_header.scss */
 #secondary-menu ul li {
   display: inline-block;
   margin-right: 4px;
   background-color: #00476F;
 }
-/* line 44, ../sass/partials/_header.scss */
+/* line 50, ../sass/partials/_header.scss */
 #secondary-menu ul li.active {
   background-color: #009BEE;
 }
 
-/* line 47, ../sass/partials/_header.scss */
+/* line 53, ../sass/partials/_header.scss */
 #secondary-menu ul li a {
   display: inline-block;
   padding: 8px 16px;
 }
 
-/* line 51, ../sass/partials/_header.scss */
+/* line 57, ../sass/partials/_header.scss */
 #secondary-menu ul li:hover {
   background-color: #009BEE;
   -moz-transition: background-color 1s;
   -o-transition: background-color 1s;
   -webkit-transition: background-color 1s;
   transition: background-color 1s;
+}
+
+/* line 60, ../sass/partials/_header.scss */
+.region-header {
+  position: absolute;
 }
 
 /* line 6, ../sass/partials/_pre-footer.scss */
