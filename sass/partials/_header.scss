@@ -2,8 +2,8 @@
 
 #header {
   position: relative;
-  padding-top: $chunk*1.5;
-  padding-left: 2.75em;
+  padding-top: $chunk*2.5;
+  padding-left: $chunk*1.5;
   padding-right: $chunk*1.5;
   color: white;
   background-color: $blue; }
@@ -17,6 +17,9 @@
   padding-right: 2em;
   border-right: 2px solid white;
   margin-right: $chunk*1.5; }
+
+#logo-unr {
+  float: right; }
 
 #name-and-slogan {
   display: inline-block;
@@ -37,26 +40,28 @@
 #main-menu ul li a:hover {
   @include light-up (); }
 
-#secondary-menu {
+#upper-content {
   position: absolute;
   top: 0;
-  right: 0; }
+  right: $chunk*1.5; }
 
-#secondary-menu ul li {
-  display: inline-block;
-  margin-right: $chunk/4;
-  background-color: $dark-blue;
+#secondary-menu, .region-header {
+    float: right; }
+
+// Little fix for awful right margin.
+.region-header .element-invisible {
+  display: none; }
+
+.region-header ul li {
+  float: right;
+  text-transform: uppercase;
 
   &.active {
-    background-color: $light-blue; } }
+    background-color: $dark-blue; } }
 
-#secondary-menu ul li a {
+.region-header ul li a {
   display: inline-block;
   padding: $chunk/2 $chunk; }
 
-#secondary-menu ul li:hover {
+.region-header ul li:hover {
   @include light-up (); }
-
-.region-header {
-  position: absolute;
-}

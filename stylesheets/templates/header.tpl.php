@@ -73,9 +73,10 @@
     </div><!-- #name-and-slogan -->
     <? endif; ?>
     
+    <img src="<?= image_url ('logo-unr.png') ?>"
+         id="logo-unr"
+         alt="Logo UNR">
   </div><!-- #logo-and-text -->
-
-  <?= render($page['header']); ?>
 
   <? if ($main_menu): ?>
     <div id="main-menu" class="navigation">
@@ -94,6 +95,10 @@
     </div><!-- #main-menu -->
   <? endif; ?>
 
+  <div id="upper-content" class="clearfix">
+  
+  <?= render($page['header']); ?>
+
   <? if ($secondary_menu): ?>
     <div id="secondary-menu" class="navigation">
       <?= theme('links__system_secondary_menu', array(
@@ -110,6 +115,8 @@
       )); ?>
     </div> <!-- /#secondary-menu -->
   <? endif; ?>
+  
+  </div><!-- #upper-content -->
 
 </div><!-- .section -->
 </div><!-- #header -->
