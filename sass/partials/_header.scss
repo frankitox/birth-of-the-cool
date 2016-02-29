@@ -55,9 +55,20 @@ img#logo-lcc {
   position: absolute;
   top: 0;
   right: .5em;
+  font-size: 75%;
   text-transform: uppercase; }
 
-#secondary-menu, .region-header {
+.social-media {
+  padding-top: .125em;
+  font: 24px "myfont";
+
+  a:hover i {
+    color: $light-blue; }
+  
+  i {
+    padding-right: .125em; } }
+
+#secondary-menu, .region-header, .social-media {
   float: right; }
 #secondary-menu ul li, .region-header ul li {
   text-align: center;
@@ -87,3 +98,6 @@ img#logo-lcc {
 
 .region-header ul li.active {
   display: block; }
+.region-header ul li.active a i {
+  padding-left: .5em;
+  font-size: 75%; }

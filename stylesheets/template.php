@@ -216,16 +216,16 @@ function birthofcool_links__locale_block(&$vars) {
   $html =  "<ul>\n";
   # First the current language.
   foreach ($vars['links'] as $lang => $info) {
+    if ($lang === $language->language) {
     $html .= "<li class='active'>\n";
-    if ($lang === $language->language)
-      $html .= l($info['title'], $info['href'], $info);
-    $html .= "</li>\n"; }
+      $html .= l($info['title']."<i class='icon-triangle-down'></i>", $info['href'], array ('html' => true));
+    $html .= "</li>\n"; } }
   # Then the other languages.
   foreach ($vars['links'] as $lang => $info) {
+    if ($lang !== $language->language) {
     $html .= "<li>\n";
-    if ($lang !== $language->language)
       $html .= l($info['title'], $info['href'], $info);
-    $html .= "</li>\n"; }
+    $html .= "</li>\n"; } }
   $html .= "</ul>\n";
   
   return $html; }

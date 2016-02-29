@@ -213,15 +213,30 @@ img#logo-lcc {
   position: absolute;
   top: 0;
   right: .5em;
+  font-size: 75%;
   text-transform: uppercase;
 }
 
-/* line 60, ../sass/partials/_header.scss */
-#secondary-menu, .region-header {
+/* line 61, ../sass/partials/_header.scss */
+.social-media {
+  padding-top: .125em;
+  font: 24px "myfont";
+}
+/* line 65, ../sass/partials/_header.scss */
+.social-media a:hover i {
+  color: #009BEE;
+}
+/* line 68, ../sass/partials/_header.scss */
+.social-media i {
+  padding-right: .125em;
+}
+
+/* line 71, ../sass/partials/_header.scss */
+#secondary-menu, .region-header, .social-media {
   float: right;
 }
 
-/* line 62, ../sass/partials/_header.scss */
+/* line 73, ../sass/partials/_header.scss */
 #secondary-menu ul li, .region-header ul li {
   text-align: center;
   background-color: #006AA4;
@@ -235,44 +250,50 @@ img#logo-lcc {
   transition: background-color 1s;
 }
 
-/* line 66, ../sass/partials/_header.scss */
+/* line 77, ../sass/partials/_header.scss */
 #secondary-menu ul li a, .region-header ul li a {
   display: inline-block;
   padding: .5em 1em;
 }
 
-/* line 70, ../sass/partials/_header.scss */
+/* line 81, ../sass/partials/_header.scss */
 #secondary-menu li {
   visibility: hidden;
 }
-/* line 73, ../sass/partials/_header.scss */
+/* line 84, ../sass/partials/_header.scss */
 #secondary-menu li.first {
   visibility: visible;
 }
 
-/* line 75, ../sass/partials/_header.scss */
+/* line 86, ../sass/partials/_header.scss */
 #secondary-menu ul:hover li {
   visibility: visible;
 }
 
-/* line 79, ../sass/partials/_header.scss */
+/* line 90, ../sass/partials/_header.scss */
 .region-header .element-invisible {
   display: none;
 }
 
-/* line 82, ../sass/partials/_header.scss */
+/* line 93, ../sass/partials/_header.scss */
 .region-header ul:hover li {
   display: block;
 }
 
-/* line 85, ../sass/partials/_header.scss */
+/* line 96, ../sass/partials/_header.scss */
 .region-header ul li {
   display: none;
 }
 
-/* line 88, ../sass/partials/_header.scss */
+/* line 99, ../sass/partials/_header.scss */
 .region-header ul li.active {
   display: block;
+}
+
+/* line 101, ../sass/partials/_header.scss */
+.region-header ul li.active a i {
+  padding-left: .5em;
+  font-size: 75%;
 }
 
 /* line 6, ../sass/partials/_pre-footer.scss */

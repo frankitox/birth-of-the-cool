@@ -97,7 +97,6 @@
   <? endif; ?>
 
   <div id="upper-content" class="clearfix">
-  
   <?= render($page['header']); ?>
 
   <? if ($secondary_menu): ?>
@@ -117,6 +116,24 @@
     </div> <!-- /#secondary-menu -->
   <? endif; ?>
   
+    <div class="social-media">
+      <a href="#" target="_blank"
+         title="Twitter">
+        <i class="icon-twitter-circled"></i>
+      </a>
+      <a href="#" target="_blank"
+         title="Facebook">
+        <i class="icon-facebook-circled"></i>
+      </a>
+      <a href="#" target="_blank"
+         title="YouTube">
+        <i class="icon-youtube-square"></i>
+      </a>
+      <a href="#" target="_blank"
+         title="Skype">
+        <i class="icon-skype-circled"></i>
+      </a>
+    </div>
   </div><!-- #upper-content -->
 
 </div><!-- .section -->
