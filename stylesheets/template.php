@@ -184,3 +184,26 @@ function birthofcool_field__taxonomy_term_reference($variables) {
 
   return $output;
 }
+
+function birthofcool_preprocess_page($variables){
+  $variables['login_menu'] =
+    menu_navigation_links('menu-login-menu'); }
+
+function birthofcool_links__menu_login_menu ($variables) {
+  $html = "<div>\n";
+  $html .= "  <ul>\n";
+  foreach ($variables['links'] as $link) {
+    if ($link === reset($variables['links']))
+      $html .= "<li class='first'>";
+    else if ($link === end($variables['links']))
+      $html .= "<li class='last'>";
+    else
+      $html .= "<li>";
+    
+    $html .= l($link['title'], $link['href'], $link)
+          . "</li>"; }
+  
+  $html .= "  </ul>\n";
+  $html .= "</div>\n";
+  
+  return $html; }

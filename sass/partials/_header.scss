@@ -35,18 +35,32 @@
 
 #main-menu ul li a {
   display: inline-block;
-  padding: .75em 1.5em; }
+  padding: .75em 1.5em;
 
-#main-menu ul li a:hover {
-  @include light-up (); }
+  @include on-hover-light-up (); }
 
 #upper-content {
   position: absolute;
   top: 0;
-  right: $chunk*1.5; }
+  right: $chunk*1.5;
+  text-transform: uppercase; }
 
 #secondary-menu, .region-header {
-    float: right; }
+  float: right; }
+#secondary-menu ul li, .region-header ul li {
+  text-align: center;
+  @include on-hover-light-up (); }
+#secondary-menu ul li a, .region-header ul li a {
+  display: inline-block;
+  padding: $chunk/2 $chunk; }
+
+#secondary-menu li {
+  visibility: hidden;
+  
+  &.first {
+    visibility: visible; } }
+#secondary-menu ul:hover li {
+  visibility: visible; }
 
 // Little fix for awful right margin.
 .region-header .element-invisible {
@@ -54,14 +68,6 @@
 
 .region-header ul li {
   float: right;
-  text-transform: uppercase;
 
   &.active {
     background-color: $dark-blue; } }
-
-.region-header ul li a {
-  display: inline-block;
-  padding: $chunk/2 $chunk; }
-
-.region-header ul li:hover {
-  @include light-up (); }

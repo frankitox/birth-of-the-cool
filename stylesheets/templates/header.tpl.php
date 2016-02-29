@@ -101,7 +101,7 @@
 
   <? if ($secondary_menu): ?>
     <div id="secondary-menu" class="navigation">
-      <?= theme('links__system_secondary_menu', array(
+      <?= theme('links__menu_login_menu', array(
         'links' => $secondary_menu,
         'attributes' => array(
           'id' => 'secondary-menu-links',
