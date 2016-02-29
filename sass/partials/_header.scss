@@ -1,10 +1,8 @@
-@charset "UTF-8";
-
 #header {
   position: relative;
-  padding-top: $chunk*2.5;
-  padding-left: $chunk*1.5;
-  padding-right: $chunk*1.5;
+  padding-top: 2.5em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
   color: white;
   background-color: $blue; }
 
@@ -12,22 +10,36 @@
   padding-bottom: 1em;
   line-height: 1.25; }
 
-#logo {
-  display: inline-block;
+#header a#logo, #header #name-and-slogan,
+#logo-and-text img {
+  display: inline-block; }
+
+a#logo {
+  min-width: 157px;
+  width: 11%;
   padding-right: 2em;
-  border-right: 2px solid white;
-  margin-right: $chunk*1.5; }
+  border-right: .125em solid white;
+  margin-right: 1.5em;
+  
+  img {
+    width: 100%;
+  } }
+
+img#logo-lcc {
+  min-width: 108px;
+  width: 7%; }
 
 #logo-unr {
-  float: right; }
+  float: right;
+  min-width: 52px;
+  width: 4%; }
 
 #name-and-slogan {
-  display: inline-block;
-  font-size: 14px; }
+  font-size: 75%; }
 
 #main-menu ul li {
   display: inline-block;
-  margin-right: $chunk/4;
+  margin-right: .25em;
   background-color: $dark-blue;
 
   &.active {
@@ -42,7 +54,7 @@
 #upper-content {
   position: absolute;
   top: 0;
-  right: $chunk*1.5;
+  right: 1.5em;
   text-transform: uppercase; }
 
 #secondary-menu, .region-header {
@@ -53,7 +65,7 @@
   @include on-hover-light-up (); }
 #secondary-menu ul li a, .region-header ul li a {
   display: inline-block;
-  padding: $chunk/2 $chunk; }
+  padding: .5em 1em; }
 
 #secondary-menu li {
   visibility: hidden;
@@ -75,3 +87,7 @@
 
 .region-header ul li.active {
   display: block; }
+
+.region-header ul li a {
+  padding-right: 0;
+}

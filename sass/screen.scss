@@ -8,7 +8,10 @@
 
 @import "variables";
 
+@import "functions/more-than";
+
 @import "mixins/button-pill";
+@import "mixins/font-sizes";
 @import "mixins/on-hover-light-up";
 @import "mixins/menu";
 @import "mixins/style-anchors";

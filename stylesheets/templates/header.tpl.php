@@ -18,6 +18,7 @@
            alt="<?= t('Home'); ?>">
     </a>
     <img src="<?= image_url ('logo-lcc.png') ?>"
+         id="logo-lcc"
          alt="Logo LCC">
     <?php endif; ?>
     

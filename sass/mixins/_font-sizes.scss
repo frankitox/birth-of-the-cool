@@ -1,0 +1,3 @@
+@mixin font-sizes ($sizes...) {
+  @each $size in $sizes {
+    font-size: #{$size}; } }
