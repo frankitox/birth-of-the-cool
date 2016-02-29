@@ -275,11 +275,6 @@ img#logo-lcc {
   display: block;
 }
 
-/* line 91, ../sass/partials/_header.scss */
-.region-header ul li a {
-  padding-right: 0;
-}
-
 /* line 6, ../sass/partials/_pre-footer.scss */
 #pre-footer {
   padding: 32px 48px;
