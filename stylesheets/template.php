@@ -207,3 +207,23 @@ function birthofcool_links__menu_login_menu ($variables) {
   $html .= "</div>\n";
   
   return $html; }
+
+function birthofcool_links__locale_block(&$vars) {
+  global $language;
+  
+  $html =  "<ul>\n";
+  # First the current language.
+  foreach ($vars['links'] as $lang => $info) {
+    $html .= "<li class='active'>\n";
+    if ($lang === $language->language)
+      $html .= l($info['title'], $info['href'], $info);
+    $html .= "</li>\n"; }
+  # Then the other languages.
+  foreach ($vars['links'] as $lang => $info) {
+    $html .= "<li>\n";
+    if ($lang !== $language->language)
+      $html .= l($info['title'], $info['href'], $info);
+    $html .= "</li>\n"; }
+  $html .= "</ul>\n";
+  
+  return $html; }

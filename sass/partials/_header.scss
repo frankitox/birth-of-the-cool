@@ -49,6 +49,7 @@
   float: right; }
 #secondary-menu ul li, .region-header ul li {
   text-align: center;
+  background-color: $blue;
   @include on-hover-light-up (); }
 #secondary-menu ul li a, .region-header ul li a {
   display: inline-block;
@@ -66,8 +67,11 @@
 .region-header .element-invisible {
   display: none; }
 
-.region-header ul li {
-  float: right;
+.region-header ul:hover li {
+  display: block; }
 
-  &.active {
-    background-color: $dark-blue; } }
+.region-header ul li {
+  display: none; }
+
+.region-header ul li.active {
+  display: block; }

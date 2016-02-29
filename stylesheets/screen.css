@@ -199,6 +199,7 @@ body {
 /* line 50, ../sass/partials/_header.scss */
 #secondary-menu ul li, .region-header ul li {
   text-align: center;
+  background-color: #006AA4;
 }
 /* line 3, ../sass/mixins/_on-hover-light-up.scss */
 #secondary-menu ul li:hover, .region-header ul li:hover {
@@ -209,38 +210,44 @@ body {
   transition: background-color 1s;
 }
 
-/* line 53, ../sass/partials/_header.scss */
+/* line 54, ../sass/partials/_header.scss */
 #secondary-menu ul li a, .region-header ul li a {
   display: inline-block;
   padding: 8px 16px;
 }
 
-/* line 57, ../sass/partials/_header.scss */
+/* line 58, ../sass/partials/_header.scss */
 #secondary-menu li {
   visibility: hidden;
 }
-/* line 60, ../sass/partials/_header.scss */
+/* line 61, ../sass/partials/_header.scss */
 #secondary-menu li.first {
   visibility: visible;
 }
 
-/* line 62, ../sass/partials/_header.scss */
+/* line 63, ../sass/partials/_header.scss */
 #secondary-menu ul:hover li {
   visibility: visible;
 }
 
-/* line 66, ../sass/partials/_header.scss */
+/* line 67, ../sass/partials/_header.scss */
 .region-header .element-invisible {
   display: none;
 }
 
-/* line 69, ../sass/partials/_header.scss */
-.region-header ul li {
-  float: right;
+/* line 70, ../sass/partials/_header.scss */
+.region-header ul:hover li {
+  display: block;
 }
-/* line 72, ../sass/partials/_header.scss */
+
+/* line 73, ../sass/partials/_header.scss */
+.region-header ul li {
+  display: none;
+}
+
+/* line 76, ../sass/partials/_header.scss */
 .region-header ul li.active {
-  background-color: #00476F;
+  display: block;
 }
 
 /* line 6, ../sass/partials/_pre-footer.scss */
