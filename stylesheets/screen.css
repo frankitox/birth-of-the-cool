@@ -212,7 +212,7 @@ img#logo-lcc {
 #upper-content {
   position: absolute;
   top: 0;
-  right: 1.5em;
+  right: .5em;
   text-transform: uppercase;
 }
 
@@ -347,7 +347,7 @@ img#logo-lcc {
 
 /* line 3, ../sass/partials/_footer.scss */
 #footer-wrapper {
-  padding: 2em 3em;
+  padding: 1.25em 3em;
   background-color: #006AA4;
   color: white;
 }
