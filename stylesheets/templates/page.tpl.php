@@ -148,6 +148,17 @@
     <?php endif; ?>
 
   </div></div> <!-- /#main, /#main-wrapper -->
+
+  <?php if ($page['rounded_menu']): ?>
+  <div id="rounded-menu" class="clearfix">
+    <div>
+      <ul class="clearfix">
+        <?= theme('links__menu_menu_rounded',
+                  array ('links' => $rounded_menu)); ?>
+      </ul>
+    </div>
+  </div>
+  <?php endif; ?>
   
   <div id="before-footer" class="clearfix">
     <?php require 'before-footer.tpl.php'; ?>

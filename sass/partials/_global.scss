@@ -6,6 +6,6 @@ body {
 
 // Buttons.
 .button {
-  @include button-pill ($light-blue); }
+  @include button-pill ($dark-blue); }
 .button-dark-blue {
   @include button-pill ($dark-blue); }

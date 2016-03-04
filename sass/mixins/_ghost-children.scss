@@ -1,0 +1,34 @@
+/// Modifies `:before` of the element to add a full
+/// height inline-block, so you can valign all children.
+
+/// @link https://css-tricks.com/centering-in-the-unknown/
+
+/// @example scss - usage
+/// div {
+///   @include add-ghost();
+/// }
+
+/// @example css - rendered result
+/// div:before {
+///   content: "";
+///   display: inline-block;
+///   @include size (null 100%);
+///   margin-right: -0.25em;
+///   vertical-align: middle;
+/// }
+
+@mixin ghost-children ($pseudo: before, $margin-right: null) {
+  text-align: center;
+  
+  &:#{$pseudo} {
+    content: "";
+    display: inline-block;
+    height: 100%;
+    @if $margin-right {
+      margin-right: $margin-right;
+    } @else {
+      margin-right: -0.25em;
+    }
+    vertical-align: middle;
+  }
+}

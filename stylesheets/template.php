@@ -187,9 +187,12 @@ function birthofcool_field__taxonomy_term_reference($variables) {
   return $output;
 }
 
-function birthofcool_preprocess_page($variables){
+function birthofcool_preprocess_page(&$variables){
   $variables['login_menu'] =
-    menu_navigation_links('menu-login-menu'); }
+    menu_navigation_links('menu-login-menu');
+  $variables['rounded_menu'] =
+    menu_navigation_links('menu-menu-roun');
+}
 
 function birthofcool_links__menu_login_menu ($variables) {
   $html = "<div>\n";
@@ -229,3 +232,41 @@ function birthofcool_links__locale_block(&$vars) {
   $html .= "</ul>\n";
   
   return $html; }
+
+// TODO: Check if there's another way of doing
+// this. Must be a render function in Drupal.
+function birthofcool_links__menu_menu_rounded ($variables) {
+  var_export ($variables);
+  $icons = array ("laptop", "edit-paper",
+                  "people", "envelope-inverse");
+  $h = "<ul class='clearfix'>\n";
+  $i = 0; # icons index.
+  foreach ($variables['links'] as $link) {
+    
+    $h .= "<li>\n";
+    $h .= "<div>\n";
+    $h .= "  <a href='" . url($link['href'], $link) . "' title='" . $link['title'] . "'>";
+    $h .= "    <div class='outer-border'>\n";
+    $h .= "      <div class='inner-border'>\n";
+    $h .= "        <div>\n";
+    $h .= "          <div class='content'>\n";
+    $h .= "            <div>\n";
+    $h .= "              <i class='icon-".$icons[$i]."'></i>\n";
+    $h .= "              <h1>".$link['title']."</h1>";
+    $h .= "              <p>".$link['attributes']['title']."</p>";
+    $h .= "              <span>ver más</span>";
+    $h .= "            </div>\n";
+    $h .= "          </div>\n";
+    $h .= "        </div>\n";
+    $h .= "      </div>\n";
+    $h .= "    </div>\n";
+    $h .= "</a>\n";
+    $h .= "</div>\n";
+    $h .= "</li>\n";
+    
+    $i++; # Increase icons index.
+  }
+  
+  $h .= "</ul>\n";
+  
+  return $h; }
