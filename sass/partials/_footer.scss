@@ -12,7 +12,7 @@
   @include menu ();
 
   & li {
-    // todo: find out why I have to clean
+    // TODO: find out why I have to clean
     // this?
     margin: 0;
     padding: 0; }
@@ -23,4 +23,6 @@
     padding-left: 0; }
   & li.last a {
     border-right: 0; }
+  & li ul {
+    display: none; }
 }

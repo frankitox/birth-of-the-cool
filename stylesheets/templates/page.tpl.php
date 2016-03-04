@@ -103,7 +103,9 @@
       <div id="breadcrumb"><?php print $breadcrumb; ?></div>
     <?php endif; ?>
     
-    <div class="content-container">
+    <div class="content-container
+             <?= ($page['sidebar_first']) ?
+                  "sidebar-first-on" : ""; ?>">
       <?php if ($page['featured']): ?>
         <div id="featured"><div class="section clearfix">
           <?php print render($page['featured']); ?>

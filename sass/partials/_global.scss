@@ -1,5 +1,5 @@
 body {
-  font: $baseline sans-serif;
+  font: $baseline Hind, sans-serif;
   
   @media #{more-than($desktop)} {
     @include font-sizes ($baseline, 1.5vw); } }
@@ -13,8 +13,8 @@ body {
 #breadcrumb {
   display: none; }
 
-.content-container {
+.content-container.sidebar-first-on {
   margin-left: 10em; }
-.content-container > #content {
+.content-container.sidebar-first-on > #content {
   float: left;
   box-shadow: -1em -1em 2.5em -.25em #bebebe; }
