@@ -1,7 +1,7 @@
 #header {
   position: relative;
   padding-top: 2.5em;
-  padding-left: 1.5em;
+  padding-left: $left-pad;
   padding-right: 1.5em;
   color: white;
   background-color: $blue; }
@@ -29,10 +29,12 @@ img#logo-lcc {
   min-width: 108px;
   width: 7%; }
 
-#logo-unr {
-  float: right;
-  min-width: 52px;
-  width: 4%; }
+.uni-logos {
+  float: right; }
+.uni-logos img {
+  margin-right: .5em; }
+.uni-logos img.last-logo {
+  margin-right: 0; }
 
 #name-and-slogan {
   font-size: 75%; }
@@ -58,14 +60,7 @@ img#logo-lcc {
   text-transform: uppercase; }
 
 .social-media {
-  padding-top: .125em;
-  font: 24px "myfont";
-
-  a:hover i {
-    color: $light-blue; }
-  
-  i {
-    padding-right: .125em; } }
+  @extend %social-media; }
 
 #secondary-menu, .region-header, .social-media {
   float: right; }

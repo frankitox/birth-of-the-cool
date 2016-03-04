@@ -11,6 +11,8 @@
 @import "functions/more-than";
 
 @import "mixins/button-pill";
+@import "mixins/social-media";
+@import "mixins/small-header";
 @import "mixins/font-sizes";
 @import "mixins/on-hover-light-up";
 @import "mixins/menu";
@@ -20,5 +22,6 @@
 
 @import "partials/global";
 @import "partials/header";
-@import "partials/pre-footer";
+// @import "partials/pre-footer";
+@import "partials/before-footer";
 @import "partials/footer";

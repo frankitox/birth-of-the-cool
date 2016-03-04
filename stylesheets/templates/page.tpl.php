@@ -148,7 +148,11 @@
     <?php endif; ?>
 
   </div></div> <!-- /#main, /#main-wrapper -->
-
+  
+  <div id="before-footer" class="clearfix">
+    <?php require 'before-footer.tpl.php'; ?>
+  </div>
+  
   <?php if ($page['pre_footer']): ?>
   <div id="pre-footer" class="clearfix">
     <?php print render($page['pre_footer']); ?>

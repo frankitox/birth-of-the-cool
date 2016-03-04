@@ -74,9 +74,9 @@
     </div><!-- #name-and-slogan -->
     <? endif; ?>
     
-    <img src="<?= image_url ('logo-unr.png') ?>"
-         id="logo-unr"
-         alt="Logo UNR">
+    <div class="uni-logos">
+      <?php require 'uni-logos.tpl.php'; ?>
+    </div>
   </div><!-- #logo-and-text -->
 
   <? if ($main_menu): ?>
@@ -117,22 +117,7 @@
   <? endif; ?>
   
     <div class="social-media">
-      <a href="#" target="_blank"
-         title="Twitter">
-        <i class="icon-twitter-circled"></i>
-      </a>
-      <a href="#" target="_blank"
-         title="Facebook">
-        <i class="icon-facebook-circled"></i>
-      </a>
-      <a href="#" target="_blank"
-         title="YouTube">
-        <i class="icon-youtube-square"></i>
-      </a>
-      <a href="#" target="_blank"
-         title="Skype">
-        <i class="icon-skype-circled"></i>
-      </a>
+      <?php require 'social-media.tpl.php'; ?>
     </div>
   </div><!-- #upper-content -->
 
