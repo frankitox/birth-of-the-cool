@@ -236,11 +236,11 @@ function birthofcool_links__locale_block(&$vars) {
 // TODO: Check if there's another way of doing
 // this. Must be a render function in Drupal.
 function birthofcool_links__menu_menu_rounded ($variables) {
-  var_export ($variables);
   $icons = array ("laptop", "edit-paper",
                   "people", "envelope-inverse");
+  $i     = 0; # icons index.
+  
   $h = "<ul class='clearfix'>\n";
-  $i = 0; # icons index.
   foreach ($variables['links'] as $link) {
     
     $h .= "<li>\n";
