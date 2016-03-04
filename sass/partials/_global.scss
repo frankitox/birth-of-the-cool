@@ -9,3 +9,12 @@ body {
   @include button-pill ($dark-blue); }
 .button-dark-blue {
   @include button-pill ($dark-blue); }
+
+#breadcrumb {
+  display: none; }
+
+.content-container {
+  margin-left: 10em; }
+.content-container > #content {
+  float: left;
+  box-shadow: -1em -1em 2.5em -.25em #bebebe; }
