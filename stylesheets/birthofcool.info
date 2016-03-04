@@ -17,6 +17,7 @@ stylesheets[all][] = screen.css
 ; regions[machine_name] = Readable Name
 
 regions[header]      = Header
+regions[header_bottom_right] = Header at bottom right
 regions[help]        = Help
 regions[page_top]    = Page top
 regions[page_bottom] = Page bottom

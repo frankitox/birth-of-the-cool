@@ -96,6 +96,10 @@
     </div><!-- #main-menu -->
   <? endif; ?>
 
+  <? if ($page['header_bottom_right']): ?>
+  <?= render($page['header_bottom_right']); ?>
+  <? endif; ?>
+
   <div id="upper-content" class="clearfix">
   <?= render($page['header']); ?>
 

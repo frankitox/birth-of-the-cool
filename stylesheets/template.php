@@ -242,7 +242,6 @@ function birthofcool_links__menu_menu_rounded ($variables) {
   
   $h = "<ul class='clearfix'>\n";
   foreach ($variables['links'] as $link) {
-    
     $h .= "<li>\n";
     $h .= "<div>\n";
     $h .= "  <a href='" . url($link['href'], $link) . "' title='" . $link['title'] . "'>";
