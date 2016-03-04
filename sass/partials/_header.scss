@@ -60,6 +60,7 @@ img#logo-lcc {
   text-transform: uppercase; }
 
 .social-media {
+  margin-right: .125em;
   @extend %social-media; }
 
 #secondary-menu, .region-header, .social-media {
@@ -69,9 +70,17 @@ img#logo-lcc {
   background-color: $blue;
   @include on-hover-light-up (); }
 #secondary-menu ul li a, .region-header ul li a {
+  box-sizing: border-box;
   display: inline-block;
-  padding: .5em 1em; }
+  padding: .5em 1em;
+  width: 100%;
+  background-color: $dark-blue; }
+#secondary-menu ul li a:hover,
+.region-header ul li a:hover {
+  background-color: $light-blue; }
 
+#secondary-menu {
+  margin-right: .5em; }
 #secondary-menu li {
   visibility: hidden;
   
