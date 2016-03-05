@@ -18,3 +18,22 @@ body {
 .content-container.sidebar-first-on > #content {
   float: left;
   box-shadow: -1em -1em 2.5em -.25em #bebebe; }
+
+#content {
+  padding: 1em;
+  font-size: 85%; }
+#content h1, #content h2 {
+  @extend %small-header;
+  color: $header-blue; }
+
+#content a {
+  color: $light-blue; }
+
+#content strong {
+  font-weight: bold; }
+
+#content li.node-readmore a {
+  @include button-pill ($light-blue);
+  font-size: 75%;
+  padding: .25em .5em;
+  padding-bottom: 0; }

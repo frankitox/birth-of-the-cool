@@ -14,7 +14,11 @@
 @import "mixins/expand";
 @import "mixins/ghost-children";
 @import "mixins/social-media";
+
 @import "mixins/small-header";
+@import "mixins/input-text";
+@import "mixins/submit-search";
+
 @import "mixins/font-sizes";
 @import "mixins/on-hover-light-up";
 @import "mixins/menu";
@@ -23,6 +27,7 @@
 @import "defaults/clean-anchors";
 
 @import "partials/global";
+@import "partials/pagination";
 @import "partials/header";
 @import "partials/region-header-bottom-right";
 @import "partials/sidebar-first";

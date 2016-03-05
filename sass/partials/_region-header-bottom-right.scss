@@ -5,19 +5,7 @@
   text-align: right; }
 
 .region-header-bottom-right input[type=text] {
-  width: 18em;
-  width: 20vw;
-  border: 0;
-  padding-top: .625em;
-  padding-bottom: .625em;
-  padding-left: 1em; }
+  @extend %input-text;
+  width: 20vw; }
 .region-header-bottom-right input[type=submit] {
-  margin-left: -1em;
-  border: 0;
-  padding: .625em 2em;
-  background-color: #00436A;
-  background-image: url('images/lupa.png');
-  background-size: 35%;
-  background-repeat: no-repeat;
-  background-position: center;
-  text-indent: -9999px; }
+  @extend %submit-search; }
