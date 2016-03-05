@@ -1,9 +1,12 @@
 @charset "UTF-8";
 
 #footer-wrapper {
-  padding: 1.25em 3em;
+  padding: 1.25em $left-pad;
   background-color: $blue;
   color: white; }
+
+#footer-wrapper .section {
+  font-size: 75%; }
 
 #footer .block-menu h2 {
   display: none; }

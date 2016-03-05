@@ -1,8 +1,13 @@
 body {
+  background-color: grey;
   font: $baseline Hind, sans-serif;
   
   @media #{more-than($desktop)} {
     @include font-sizes ($baseline, 1.5vw); } }
+
+// Fix drupal's clearfix.
+.clearfix:after {
+  content: ' '; }
 
 // Buttons.
 .button {
@@ -12,6 +17,16 @@ body {
 
 #breadcrumb {
   display: none; }
+
+#page {
+  max-width: 1024px;
+  margin: 0 auto;
+  background-color: white;
+  
+  @media #{more-than($desktop)} {
+    width: 85%;
+    max-width: none; }
+}
 
 .content-container.sidebar-first-on {
   margin-left: 10em; }

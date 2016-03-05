@@ -8,7 +8,8 @@
 #before-footer .column.first {
   font-size: 80%;
   h1 {
-    @extend %small-header; } }
+    @extend %small-header;
+    margin-bottom: .125em; } }
 #before-footer .second.column {
   @extend %social-media;
   text-align: center; }
