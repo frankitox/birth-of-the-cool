@@ -6,10 +6,12 @@
   float: left;
   width: 33.332%; }
 #before-footer .column.first {
-  font-size: 80%;
   h1 {
     @extend %small-header;
-    margin-bottom: .125em; } }
+    font-size: 15px;
+    margin-bottom: .125em; }
+  p {
+    font-size: 13px; } }
 #before-footer .second.column {
   @extend %social-media;
   text-align: center; }

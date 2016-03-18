@@ -1,6 +1,6 @@
 #header {
   position: relative;
-  padding-top: 2.25em;
+  padding-top: 1.75em;
   padding-left: $left-pad;
   padding-right: 1.5em;
   color: white;
@@ -37,7 +37,7 @@ img#logo-lcc {
   margin-right: 0; }
 
 #name-and-slogan {
-  font-size: 75%; }
+  font-size: 10.86px; }
 
 #main-menu ul li {
   display: inline-block;
@@ -49,7 +49,7 @@ img#logo-lcc {
 #main-menu ul li a {
   display: inline-block;
   padding: .35em 1.5em;
-  font-size: 80%;
+  font-size: 14px;
 
   @include on-hover-light-up (); }
 
@@ -57,7 +57,7 @@ img#logo-lcc {
   position: absolute;
   top: 0;
   right: .5em;
-  font-size: 75%;
+  font-size: 14px;
   text-transform: uppercase; }
 
 .social-media {
