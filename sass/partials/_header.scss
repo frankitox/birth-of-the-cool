@@ -41,13 +41,15 @@ img#logo-lcc {
 
 #main-menu ul li {
   display: inline-block;
+  float: left;
+  margin-right: .25em;
   background-color: $dark-blue;
 
   &.active {
     background-color: $light-blue; } }
 
 #main-menu ul li a {
-  display: inline-block;
+  display: block;
   padding: .35em 1.5em;
   font-size: 14px;
 
