@@ -1,0 +1,52 @@
+#events-view {
+  margin-bottom: 12px;
+  line-height: 1.2;
+  color: white; }
+
+#events-view h2 {
+  font-size: 15px;
+  font-weight: 600; }
+$cool-blue: #04639D;
+
+#events-view h2 span {
+  padding-top: 6px;
+  padding-right: 30px;
+  padding-left: 30px;
+  background-color: $cool-blue; }
+
+#events-view .contents-wrapper {
+  padding-left: $left-pad;
+  background-color: #EAEAEA; }
+
+#events-view .event-wrapper {
+  float: left;
+  width: 25%; }
+#events-view .event-wrapper > div {
+  margin-right: $left-pad; }
+#events-view .event {
+  padding: 1.75em 0;
+  color: #00639A; }
+
+#events-view .event h4 {
+  margin-bottom: .5em;
+  font-size: 13px;
+  font-weight: 600;
+  color: $cool-blue; }
+#events-view .event h3 {
+  margin-bottom: .5em;
+  font-size: 15px;
+  font-weight: 600;
+  color: #006AA4; }
+#events-view .event p {
+  margin-bottom: .5em;
+  font-size: 13px;
+  color: #4C4C4C; }
+#events-view .event a.button {
+  background-color: $cool-blue;
+  border-color: $cool-blue;
+  font-size: 10px; }
+#events-view .event a.button:hover {
+  transition: all .2s ease-in;
+  border-color: $cool-blue;
+  background: transparent;
+  color: $cool-blue; }

@@ -164,6 +164,10 @@
   </div>
   <?php endif; ?>
   
+  <?php if ($is_front): ?>
+    <?php require 'events.tpl.php'; ?>
+  <?php endif; ?>
+  
   <div id="before-footer" class="clearfix">
     <?php require 'before-footer.tpl.php'; ?>
   </div>

@@ -1,7 +1,9 @@
 @mixin button-pill ($color) {
   display: inline-block;
-  padding: $chunk/3 $chunk*3/4;
-  padding-bottom: $chunk/6;
+  padding-top: 3px;
+  padding-right: 6px;
+  padding-bottom: 1px;
+  padding-left: 8px;
   border: 2px solid $color;
   color: white;
   background-color: $color;

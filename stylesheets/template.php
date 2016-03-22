@@ -55,7 +55,7 @@ function birthofcool_preprocess_html(&$variables) {
   drupal_add_css(path_to_theme() . '/css/ie6.css', array('group' => CSS_THEME, 'browsers' => array('IE' => 'IE 6', '!IE' => FALSE), 'preprocess' => FALSE));
   drupal_add_css("https://file.myfontastic.com/bTJEN78Rz5sDzYYX3p5Ho4/icons.css",
                  array('type' => 'external'));
-  drupal_add_css("https://fonts.googleapis.com/css?family=Hind:400,600,300",
+  drupal_add_css("https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700",
                  array('type' => 'external'));
 }
 
