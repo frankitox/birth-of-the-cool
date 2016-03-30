@@ -1,0 +1,16 @@
+.views-exposed-form label[for="edit-keys"] {
+  display: none; }
+.views-exposed-form input[type=text] {
+  @extend %input-text; }
+.views-exposed-form .views-exposed-widget .form-submit {
+  @extend %submit-search; }
+.views-exposed-form .views-exposed-widget,
+.views-exposed-form .views-submit-button {
+  padding: 0;
+  margin: 0; }
+
+.views-exposed-form input[type=text],
+.views-exposed-form input[type=text]:focus,
+.views-exposed-form .views-exposed-widget .form-submit {
+  border: 1px solid $blue;
+  outline: none; }

@@ -15,14 +15,15 @@
 @import "mixins/ghost-children";
 @import "mixins/social-media";
 
-@import "mixins/small-header";
-@import "mixins/input-text";
-@import "mixins/submit-search";
-
 @import "mixins/font-sizes";
 @import "mixins/on-hover-light-up";
 @import "mixins/menu";
 @import "mixins/style-anchors";
+
+// %selectors:
+@import "mixins/small-header";
+@import "mixins/input-text";
+@import "mixins/submit-search";
 
 @import "defaults/clean-anchors";
 
@@ -38,3 +39,6 @@
 @import "partials/footer";
 
 @import "partials/subjects-table";
+
+// Forms related to views styles:
+@import "partials/views-exposed-form";
