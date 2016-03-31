@@ -40,9 +40,11 @@
 @import "partials/footer";
 
 // Unspecific view
+@import "partials/view";
 @import "partials/views-exposed-form";
 
 // Sections
 @import "partials/home/rounded-menu";
 @import "partials/home/events";
 @import "partials/subjects/table";
+@import "partials/subjects/materia";

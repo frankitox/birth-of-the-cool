@@ -46,8 +46,9 @@ p {
   width: 100%; }
 #content .section {
   padding: 1em; }
-#content h1, #content h2 {
+h1, h2 {
   @extend %small-header;
+  margin: 0;
   color: $header-blue; }
 
 #content strong {

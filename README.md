@@ -8,3 +8,6 @@ About styling a menu.
 https://api.drupal.org/api/drupal/includes%21menu.inc/function/theme_menu_tree/7
 https://www.drupal.org/node/988694
 https://gist.github.com/gagarine/3201854
+
+About styling views.
+https://www.ostraining.com/blog/drupal/views-templates/
