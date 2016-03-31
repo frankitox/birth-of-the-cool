@@ -1,0 +1,20 @@
+.materia-header .left {
+  float: left; }
+.materia-header .left h1 {
+  font-size: 27px;
+  font-weight: 500;
+  color: $blue; }
+.materia-header .left .field-name-field-codigo {
+  margin-top: -.5em;
+  font-size: 18px;
+  font-weight: 500;
+  color: #707070; }
+.materia-header .field-name-field-plan {
+  float: right; }
+.materia-header .field-name-field-plan img {
+  display: none; }
+.materia-header .field-name-field-plan a {
+  @include button-pill (#009AEE); }
+
+.field-label {
+  color: $light-blue; }
