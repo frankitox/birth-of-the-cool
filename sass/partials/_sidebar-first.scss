@@ -1,16 +1,16 @@
 #sidebar-first {
-  width: 10em;
-  margin-left: -10em;
+  width: $sidebar-width;
+  margin-left: -$sidebar-width;
   float: left;
   margin-top: 1em; }
 #sidebar-first .section {
-  font-size: 80%; }
+  font-size: 12.8px; }
 #sidebar-first .section h2 {
   padding-left: 1em;
   color: $header-blue;
   @extend %small-header;
   margin-bottom: .5em;
-  font-size: 115%; }
+  font-size: 14.72px; }
 
 #sidebar-first ul, #sidebar-first li {
   padding: 0;

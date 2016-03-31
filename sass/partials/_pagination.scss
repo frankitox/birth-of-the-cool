@@ -1,25 +1,18 @@
 .item-list ul.pager {
   float: right; }
-
 .item-list ul.pager li {
   float: left;
   margin: 0;
   padding: 0; }
-
 .item-list ul.pager li.pager-current {
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-bottom: .25em;
-  padding-top: .25em;
+  padding: .25em .5em;
   color: white;
   background-color: $light-blue; }
 ul.pager li a {
   display: block;
-  padding-left: .5em;
-  padding-right: .5em;
-  padding-bottom: .25em;
-  padding-top: .25em;
+  padding: .25em .5em;
   color: $header-blue; }
 ul.pager li a:hover {
   color: white;
-  background-color: $header-blue; }
+  background-color: $header-blue;
+  @include transition (all 1s); }

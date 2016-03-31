@@ -157,7 +157,7 @@
   <div id="rounded-menu" class="clearfix">
     <div>
       <ul class="clearfix">
-        <?= theme('links__menu_menu_rounded',
+        <?= theme('links__menu_rounded_menu',
                   array ('links' => $rounded_menu)); ?>
       </ul>
     </div>

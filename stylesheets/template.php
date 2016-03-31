@@ -193,7 +193,7 @@ function birthofcool_preprocess_page(&$variables){
   $variables['login_menu'] =
     menu_navigation_links('menu-login-menu');
   $variables['rounded_menu'] =
-    menu_navigation_links('menu-menu-roun');
+    menu_navigation_links('menu-rounded-menu');
 }
 
 function birthofcool_links__menu_login_menu ($variables) {
@@ -237,7 +237,7 @@ function birthofcool_links__locale_block(&$vars) {
 
 // TODO: Check if there's another way of doing
 // this. Must be a render function in Drupal.
-function birthofcool_links__menu_menu_rounded ($variables) {
+function birthofcool_links__menu_rounded_menu ($variables) {
   $icons = array ("laptop", "edit-paper",
                   "people", "envelope-inverse");
   $i     = 0; # icons index.

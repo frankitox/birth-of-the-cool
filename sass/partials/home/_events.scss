@@ -4,14 +4,18 @@
   color: white; }
 
 #events-view h2 {
+  margin: 0;
   font-size: 15px;
   font-weight: 600; }
+
 $cool-blue: #04639D;
 
 #events-view h2 span {
+  display: inline-block;
   padding-top: 6px;
   padding-right: 30px;
   padding-left: 30px;
+  padding-bottom: 3px;
   background-color: $cool-blue; }
 
 #events-view .contents-wrapper {

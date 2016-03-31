@@ -6,6 +6,9 @@
   color: white;
   background-color: $blue; }
 
+#header a {
+  color: white; }
+
 #logo-and-text {
   padding-bottom: 1em;
   line-height: 1.25; }
@@ -38,72 +41,5 @@ img#logo-lcc {
 
 #name-and-slogan {
   font-size: 10.86px; }
-
-#main-menu ul li {
-  display: inline-block;
-  float: left;
-  margin-right: .25em;
-  background-color: $dark-blue;
-
-  &.active {
-    background-color: $light-blue; } }
-
-#main-menu ul li a {
-  display: block;
-  padding: .35em 1.5em;
-  font-size: 14px;
-
-  @include on-hover-light-up (); }
-
-#upper-content {
-  position: absolute;
-  top: 0;
-  right: .5em;
-  font-size: 14px;
-  text-transform: uppercase; }
-
-.social-media {
-  margin-right: .125em;
-  @extend %social-media; }
-
-#secondary-menu, .region-header, .social-media {
-  float: right; }
-#secondary-menu ul li, .region-header ul li {
-  text-align: center;
-  background-color: $blue;
-  @include on-hover-light-up (); }
-#secondary-menu ul li a, .region-header ul li a {
-  box-sizing: border-box;
-  display: inline-block;
-  padding: .25em .5em;
-  width: 100%;
-  background-color: $dark-blue; }
-#secondary-menu ul li a:hover,
-.region-header ul li a:hover {
-  background-color: $light-blue; }
-
-#secondary-menu {
-  margin-right: .5em; }
-#secondary-menu li {
-  visibility: hidden;
-  
-  &.first {
-    visibility: visible; } }
-#secondary-menu ul:hover li {
-  visibility: visible; }
-
-// Little fix for awful right margin.
-.region-header .element-invisible {
+#name-and-slogan #site-name {
   display: none; }
-
-.region-header ul:hover li {
-  display: block; }
-
-.region-header ul li {
-  display: none; }
-
-.region-header ul li.active {
-  display: block; }
-.region-header ul li.active a i {
-  padding-left: .5em;
-  font-size: 65%; }

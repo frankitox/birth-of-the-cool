@@ -1,0 +1,15 @@
+#main-menu ul li {
+  display: inline-block;
+  float: left;
+  margin-right: .25em;
+  background-color: $dark-blue;
+
+  &.active {
+    background-color: $light-blue; } }
+
+#main-menu ul li a {
+  display: block;
+  padding: .35em 1.5em;
+  font-size: 14px;
+
+  @include on-hover-light-up (); }

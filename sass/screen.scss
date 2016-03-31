@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+// @import "compass/reset";
 @import "compass";
 
 @import "variables";
@@ -28,17 +28,21 @@
 @import "defaults/clean-anchors";
 
 @import "partials/global";
+
+// Components
 @import "partials/pagination";
 @import "partials/header";
-@import "partials/region-header-bottom-right";
+@import "partials/header/main-menu";
+@import "partials/header/upper-content";
+@import "partials/header/bottom-right";
 @import "partials/sidebar-first";
-@import "partials/rounded-menu";
-// @import "partials/pre-footer";
-@import "partials/events";
 @import "partials/before-footer";
 @import "partials/footer";
 
-@import "partials/subjects-table";
-
-// Forms related to views styles:
+// Unspecific view
 @import "partials/views-exposed-form";
+
+// Sections
+@import "partials/home/rounded-menu";
+@import "partials/home/events";
+@import "partials/subjects/table";
