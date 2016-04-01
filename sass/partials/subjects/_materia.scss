@@ -8,6 +8,7 @@
   margin-top: -.5em;
   font-size: 18px;
   font-weight: 500;
+  text-transform: uppercase;
   color: #707070; }
 .materia-header .field-name-field-plan {
   float: right; }
@@ -17,4 +18,75 @@
   @include button-pill (#009AEE); }
 
 .field-label {
-  color: $light-blue; }
+  color: $blue; }
+
+.field-group {
+  @include clearfix ();
+  margin-top: 2em; }
+.field-name-field-docentes {
+  float: left;
+}
+.field-collection-container {
+  float: right;
+  margin: 10px 0; // Needed for the box-shadow
+  padding: 2em;
+  border: 2px solid white;
+  color: white;
+  background: $light-blue;
+  box-shadow: 0px 7px 10px -5px #CFCFCF, 0px -7px 10px -5px #CFCFCF; }
+
+.field-collection-container a,
+.field-collection-container .field-label {
+  color: white; }
+
+.field-name-field-docentes > .field-label {
+  font-weight: bold;
+  color: $blue; }
+.field-name-field-docentes > .field-items {
+  @include clearfix (); }
+.field-name-field-docentes > .field-items > .field-item {
+  float: left;
+  margin-right: 1.5em;
+  text-align: center; }
+
+.field-name-field-horarios {
+  border-left: 1px solid white;
+  padding-left: .5em;
+}
+
+// Texto de horario
+.field-name-field-horarios .date-display-range {
+  display: inline-block; }
+.field-name-field-horarios > .field-label {
+  font-size: 16px;
+  font-weight: 500; }
+.field-name-field-horarios .content {
+  font-size: 12px;
+  font-weight: 400; }
+.field-name-field-horarios .field-label-inline .field-label {
+  font-weight: 400; }
+
+// Eliminar/editar horario
+.field-name-field-horarios ul.field-collection-view-links {
+  @include clearfix (); }
+.field-name-field-horarios ul.field-collection-view-links li {
+  float: right;
+  margin-left: .25em;
+  font-weight: 500; }
+.field-name-field-horarios ul.field-collection-view-links li:hover {
+  text-decoration: underline; }
+
+// Agregar horario:
+.field-group ul.action-links {
+  @include clearfix (); }
+.field-group ul.action-links li {
+  float: right;
+  font-weight: 500; }
+.field-group ul.action-links li:hover {
+  text-decoration: underline; }
+
+.field-name-field-lista,
+.field-name-field-descripcion,
+.field-name-field-anio,
+.field-name-field-cuatrim {
+  margin-bottom: 1em; }
