@@ -44,6 +44,7 @@ p {
   box-shadow: -1em -1em 2.5em -.25em #BEBEBE; }
 
 #content {
+  @include clearfix ();
   width: 100%; }
 #content .section {
   padding: 1em; }
@@ -60,3 +61,10 @@ h1, h2 {
   font-size: 12px;
   padding: .25em .5em;
   padding-bottom: 0; }
+
+.content-container.sidebar-second-on .section-wrapper {
+  float: left;
+  width: 70%; }
+.content-container.sidebar-second-on #sidebar-second {
+  float: left;
+  width: 30%; }
