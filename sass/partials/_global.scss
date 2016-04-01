@@ -57,11 +57,13 @@ h1, h2 {
 #content strong {
   font-weight: bold; }
 
+#content li.node-readmore {
+  padding-left: 0; }
 #content li.node-readmore a {
   @include button-pill ($light-blue);
-  font-size: 12px;
   padding: .25em .5em;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  font-size: 9px; }
 
 .sidebar-second-on .section-wrapper {
   float: left;

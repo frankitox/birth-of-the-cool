@@ -1,0 +1,14 @@
+.view .meta.submitted {
+  font-size: 9px;
+  font-weight: lighter;
+  color: #9B9B9B; }
+
+.view .link-wrapper {
+  margin-top: .5em; }
+.view li.node-readmore {
+  padding-left: 0; }
+.view li.node-readmore a {
+  @include button-pill ($light-blue);
+  padding: .25em .5em;
+  padding-bottom: 0;
+  font-size: 9px; }
