@@ -82,6 +82,7 @@
 
   <?php if ($title): ?>
   <div class="materia-header clearfix">
+    <?php print render($content['field_imagen_materia']) ?>
     <div class="left">
       <h1 class="title" id="page-title">
         <?php print $title; ?>
