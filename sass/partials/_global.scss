@@ -47,7 +47,8 @@ p {
   @include clearfix ();
   width: 100%; }
 #content .section {
-  padding: 1em; }
+  padding: 1em;
+  padding-top: 2em; }
 h1, h2 {
   @extend %small-header;
   margin: 0;
@@ -62,9 +63,12 @@ h1, h2 {
   padding: .25em .5em;
   padding-bottom: 0; }
 
-.content-container.sidebar-second-on .section-wrapper {
+.sidebar-second-on .section-wrapper {
   float: left;
   width: 70%; }
-.content-container.sidebar-second-on #sidebar-second {
+.sidebar-second-on #sidebar-second {
   float: left;
   width: 30%; }
+
+ul li.statistics_counter {
+  display: none; }
