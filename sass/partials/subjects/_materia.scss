@@ -66,25 +66,6 @@
 .field-name-field-horarios .field-label-inline .field-label {
   font-weight: 400; }
 
-// Eliminar/editar horario
-.field-name-field-horarios ul.field-collection-view-links {
-  @include clearfix (); }
-.field-name-field-horarios ul.field-collection-view-links li {
-  float: right;
-  margin-left: .25em;
-  font-weight: 500; }
-.field-name-field-horarios ul.field-collection-view-links li:hover {
-  text-decoration: underline; }
-
-// Agregar horario:
-.field-group ul.action-links {
-  @include clearfix (); }
-.field-group ul.action-links li {
-  float: right;
-  font-weight: 500; }
-.field-group ul.action-links li:hover {
-  text-decoration: underline; }
-
 .field-name-field-lista,
 .field-name-field-descripcion,
 .field-name-field-anio,
