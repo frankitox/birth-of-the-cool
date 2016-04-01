@@ -9,7 +9,7 @@ ul, li {
   padding: 0;
   list-style: none; }
 
-a {
+a, a:visited, li a.active {
   color: $light-blue; }
 p {
   margin: 0; }

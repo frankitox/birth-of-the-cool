@@ -1,0 +1,16 @@
+.view.view-docentes .view-content {
+  @include clearfix (); }
+.view-docentes .views-row {
+  float: left; }
+.view-docentes .views-row .inner-row {
+  margin-left: 1em;
+  margin-bottom: 1em;
+  border: 1px solid #0592D9;
+  padding: .75em; }
+.view-docentes .inner-row .views-field {
+  display: block; }
+
+.view-docentes .views-field-title {
+  font-size: 16px;
+  color: $blue;
+  font-weight: 500; }
