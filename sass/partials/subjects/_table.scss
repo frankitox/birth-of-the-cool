@@ -1,18 +1,8 @@
 .view-materias .view-grouping {
-  @include clearfix(); }
-.view-materias .views-table {
-  float: left;
-  width: 50%; }
-.view-materias .view-grouping-header {
-  margin-top: 1em; }
-
-.view-materias .view-grouping {
   text-align: center; }
 .view-materias .view-grouping-header {
   @extend %small-header;
   color: $dark-blue; }
-.view-materias .view-grouping-content table {
-  width: 100%; }
 .view-materias .view-grouping-content tbody,
 .view-materias .view-grouping-content tr {
   border: 0; }
@@ -29,3 +19,11 @@
 .view-materias .view-grouping-content table a {
   display: block;
   color: white; }
+
+.view-materias .view-grouping {
+  @include clearfix(); }
+.view-materias .views-table {
+  float: left;
+  width: 50%; }
+.view-materias .view-grouping-header {
+  margin-top: 1em; }
