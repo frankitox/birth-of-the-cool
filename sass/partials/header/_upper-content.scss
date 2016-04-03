@@ -13,19 +13,18 @@
   @extend %social-media;
   font-size: 26px; }
 
-#secondary-menu ul li, .region-header ul li {
+#secondary-menu ul li,
+.region-header ul li {
   text-align: center;
   background-color: $blue;
   @include on-hover-light-up (); }
-#secondary-menu ul li a, .region-header ul li a {
+#secondary-menu ul li a,
+.region-header ul li a {
   box-sizing: border-box;
   display: inline-block;
   padding: .25em .5em;
   width: 100%;
   background-color: $dark-blue; }
-#secondary-menu ul li a:hover,
-.region-header ul li a:hover {
-  background-color: $light-blue; }
 #secondary-menu {
   margin-right: .5em; }
 #secondary-menu li {
@@ -39,14 +38,29 @@
 .region-header .element-invisible {
   display: none; }
 
-.region-header ul:hover li {
-  display: block; }
+#block-locale-language,
+#block-menu-menu-login-menu {
+  float: left; }
 
-.region-header ul li {
+ul li.leaf {
+  list-style: none;
+  padding: 0; }
+
+#secondary-menu ul li a,
+.region-header ul li a {
+  @include on-hover-light-up (); }
+
+#block-locale-language ul:hover li {
+  display: block; }
+#block-locale-language ul li {
   display: none; }
-
-.region-header ul li.active {
+#block-locale-language ul li.active {
   display: block; }
-.region-header ul li.active a i {
+#block-locale-language ul li.active a i {
   padding-left: .5em;
   font-size: 65%; }
+#block-locale-language ul li a:hover {
+  background-color: $light-blue; }
+
+.logged-in #block-menu-menu-login-menu {
+  display: none; }
