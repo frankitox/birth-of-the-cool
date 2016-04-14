@@ -12,6 +12,11 @@ https://gist.github.com/gagarine/3201854
 About styling views.
 https://www.ostraining.com/blog/drupal/views-templates/
 
+Página principal:
+  Usa un bloque para mostrar las tres
+primeras noticias. Luego una view de
+tres noticias con un offset de tres.
+
 Implementación del LogIn:
   Para loguearse el usuario debe hacerlo
 usando HTTPS, para ello se emplea el puerto
@@ -49,4 +54,3 @@ Restaurar sitio desde un BackUp:
   # ?q=admin/config/search/clean-urls
   # Ahi sacar el check a las clear URLs.
   # Fuente: https://www.drupal.org/node/5590
-
