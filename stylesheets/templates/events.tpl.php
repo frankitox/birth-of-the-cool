@@ -1,4 +1,4 @@
-<div id="events-view">
+<!--<div id="events-view">
   <h2><span>Próximos Eventos</span></h2>
   <div class="contents-wrapper">
     <div class="contents clearfix">
@@ -19,4 +19,4 @@
       <?php endfor; ?>
     </div>
   </div>
-</div>
+</div>-->

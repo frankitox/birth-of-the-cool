@@ -1,5 +1,6 @@
 #block-views-slide-block {
   position: relative;
+  @include clearfix ();
 }
 
 #block-views-slide-block
@@ -8,17 +9,39 @@
   height: calc(100% - 3px);
   position: absolute;
   right: 0;
+  background: #EEE;
 }
+
 #block-views-slide-block
 .views-slideshow-controls-top
 #widget_pager_top_slide-block {
   height: 100%;
 }
 
-#views_slideshow_pager_field_item_top_slide-block_0,
-#views_slideshow_pager_field_item_top_slide-block_1,
-#views_slideshow_pager_field_item_top_slide-block_2 {
+#widget_pager_top_slide-block
+.views-slideshow-pager-field-item {
   height: 33.33333333%;
+  box-sizing: border-box;
+  padding: 16px 32px;
+  border-bottom: 1px solid rgba(154,154,154,.5);
+}
+#widget_pager_top_slide-block
+.views-slideshow-pager-field-item.active {
+  background: #D3D3D3;
+}
+
+#widget_pager_top_slide-block
+.views-slideshow-pager-field-item
+.views-content-body a:first-child {
+  font-size: 16px;
+  font-weight: 500;
+  color: $blue;
+}
+#widget_pager_top_slide-block
+.views-slideshow-pager-field-item
+.views-content-body a:last-child {
+  @include button-pill ($dark-blue);
+  font-size: 9.5px;
 }
 
 #block-views-slide-block
@@ -27,23 +50,28 @@
   float: left;
 }
 
-#block-views-slide-block
-.views-slideshow-pager-fields-item {
-  
+.views-slideshow-controls-bottom {
+  position: absolute;
+  bottom: 48px;
+  right: 35%;
+  z-index: 10;
 }
-#views_slideshow_pager_field_item_bottom_slide-block_0,
-#views_slideshow_pager_field_item_bottom_slide-block_1,
-#views_slideshow_pager_field_item_bottom_slide-block_2 {
-  width: 15px;
-  height: 15px;
-  margin-right: 10px;
+.views-slideshow-controls-bottom
+.views-slideshow-pager-field-item {
+  width: 8px;
+  height: 8px;
+  margin-right: 20px;
   float: left;
-  border: 1px solid black;
   border-radius: 50%;
   text-align: center;
-  line-height: 15px;
-  background: white;
+  line-height: 8px;
+  background: $light-blue;
   text-indent: -9999px;
+  cursor: pointer;
+}
+.views-slideshow-controls-bottom
+.views-slideshow-pager-field-item.active {
+  background: white;
 }
 
 #views_slideshow_cycle_div_slide-block_0,
