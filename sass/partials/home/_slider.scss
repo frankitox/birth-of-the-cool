@@ -36,6 +36,9 @@
   font-size: 16px;
   font-weight: 500;
   color: $blue;
+  overflow: hidden;
+  height: 20px;
+  display: inline-block;
 }
 #widget_pager_top_slide-block
 .views-slideshow-pager-field-item
@@ -43,6 +46,16 @@
   @include button-pill ($blue);
   line-height: 1.2;
   font-size: 9.5px;
+}
+#widget_pager_top_slide-block
+.views-slideshow-pager-field-item
+.views-content-body div a {
+}
+#widget_pager_top_slide-block
+.views-slideshow-pager-field-item
+.views-content-body p {
+  overflow: hidden;
+  height: 42px;
 }
 
 #block-views-slide-block
