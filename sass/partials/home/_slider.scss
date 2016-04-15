@@ -27,7 +27,7 @@
 }
 #widget_pager_top_slide-block
 .views-slideshow-pager-field-item.active {
-  background: #D3D3D3;
+  background: rgba(211,211,211,.5);
 }
 
 #widget_pager_top_slide-block
@@ -40,7 +40,8 @@
 #widget_pager_top_slide-block
 .views-slideshow-pager-field-item
 .views-content-body a:last-child {
-  @include button-pill ($dark-blue);
+  @include button-pill ($blue);
+  line-height: 1.2;
   font-size: 9.5px;
 }
 

@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/* myfont */
+@font-face {
+  font-family: "myfont";
+  src:url("fonts/1457103149.eot");
+  src:url("fonts/1457103149.eot?#iefix") format("embedded-opentype"),
+    url("fonts/1457103149.woff") format("woff"),
+    url("fonts/1457103149.ttf") format("truetype"),
+    url("fonts/1457103149.svg#1457103149") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "myfont" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "myfont" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-twitter-circled:before {
+  content: "\61";
+}
+.icon-linkedin-circled:before {
+  content: "\62";
+}
+.icon-facebook-circled:before {
+  content: "\63";
+}
+.icon-gplus-circled:before {
+  content: "\64";
+}
+.icon-user:before {
+  content: "\65";
+}
+.icon-search:before {
+  content: "\66";
+}
+.icon-menu:before {
+  content: "\67";
+}
+.icon-play-circle:before {
+  content: "\68";
+}
+.icon-power:before {
+  content: "\69";
+}
+.icon-heart:before {
+  content: "\6a";
+}
+.icon-mail:before {
+  content: "\6b";
+}
+.icon-mail-black:before {
+  content: "\6c";
+}
+.icon-home:before {
+  content: "\6d";
+}
+.icon-marker:before {
+  content: "\6e";
+}
+.icon-triangle-down:before {
+  content: "\6f";
+}
+.icon-roadmap:before {
+  content: "\70";
+}
+.icon-slides:before {
+  content: "\71";
+}
+.icon-gallery:before {
+  content: "\72";
+}
+.icon-arrow-right:before {
+  content: "\73";
+}
+.icon-arrow-left:before {
+  content: "\74";
+}
+.icon-arrow-down:before {
+  content: "\75";
+}
+.icon-arrow-up:before {
+  content: "\76";
+}
+.icon-lock:before {
+  content: "\77";
+}
+.icon-key:before {
+  content: "\78";
+}
+.icon-erase:before {
+  content: "\79";
+}
+.icon-squared-erase:before {
+  content: "\7a";
+}
+.icon-edit:before {
+  content: "\41";
+}
+.icon-right-thin-arrow:before {
+  content: "\42";
+}
+.icon-left-thin-arrow:before {
+  content: "\43";
+}
+.icon-down-thin-arrow:before {
+  content: "\44";
+}
+.icon-up-thin-arrow:before {
+  content: "\45";
+}
+.icon-triangle-right:before {
+  content: "\46";
+}
+.icon-zoom:before {
+  content: "\47";
+}
+.icon-triangle-left:before {
+  content: "\48";
+}
+.icon-triangle-up:before {
+  content: "\49";
+}
+.icon-link:before {
+  content: "\4a";
+}
+.icon-circle:before {
+  content: "\4b";
+}
+.icon-cellphone:before {
+  content: "\4c";
+}
+.icon-face:before {
+  content: "\4d";
+}
+.icon-home-2:before {
+  content: "\4e";
+}
+.icon-envelope:before {
+  content: "\4f";
+}
+.icon-telephone:before {
+  content: "\50";
+}
+.icon-plain:before {
+  content: "\51";
+}
+.icon-service-station:before {
+  content: "\52";
+}
+.icon-map:before {
+  content: "\53";
+}
+.icon-calculadora:before {
+  content: "\54";
+}
+.icon-user-fat:before {
+  content: "\55";
+}
+.icon-calculator:before {
+  content: "\56";
+}
+.icon-skype-circled:before {
+  content: "\57";
+}
+.icon-youtube-square:before {
+  content: "\58";
+}
+.icon-search-reverse:before {
+  content: "\59";
+}
+.icon-calendar:before {
+  content: "\5a";
+}
+.icon-people:before {
+  content: "\30";
+}
+.icon-edit-paper:before {
+  content: "\31";
+}
+.icon-laptop:before {
+  content: "\32";
+}
+.icon-envelope-inverse:before {
+  content: "\33";
+}
