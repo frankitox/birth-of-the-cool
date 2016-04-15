@@ -1,0 +1,25 @@
+.front #block-system-main {
+  @include clearfix ();
+  border-bottom: 1px solid rgba(154,154,154,.2);
+}
+
+.front #block-system-main .view .views-row {
+  float: left;
+  width: 33.3333333%;
+  margin: 32px 0;
+  padding: 0 16px;
+  box-sizing: border-box;
+  border-left: 1px solid rgba(154,154,154,.2);
+}
+
+.front #block-system-main .view .views-row .meta.submitted {
+  display: none;
+}
+
+.front #block-system-main .view .views-row .node-readmore a {
+  @include button-pill (#0088AA);
+  font-size: 12px;
+  border-width: 2px;
+  background: transparent;
+  color: #04639D;
+}
