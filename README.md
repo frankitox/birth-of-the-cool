@@ -16,6 +16,8 @@ Página principal:
   Usa un bloque para mostrar las tres
 primeras noticias. Luego una view de
 tres noticias con un offset de tres.
+Para la view usa un template custom en
+templates/views-view-unformatted--noticias-lcc.tpl.php
 
 Implementación del LogIn:
   Para loguearse el usuario debe hacerlo

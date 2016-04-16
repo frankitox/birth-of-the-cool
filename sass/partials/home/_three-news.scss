@@ -12,14 +12,41 @@
   border-left: 1px solid rgba(154,154,154,.2);
 }
 
+.front #block-system-main .view .views-row img {
+  width: 75%;
+  height: initial;
+}
+
+.front #block-system-main .view .views-row .inner-row .title {
+  margin-top: 8px;
+}
+.front #block-system-main .view .views-row .inner-row .title a {
+  font-size: 16px;
+  font-weight: 500;
+  overflow: hidden;
+  height: 20px;
+  color: $blue;
+}
+
+.front #block-system-main .view .views-row .inner-row .body {
+  height: 45px;
+  overflow: hidden;
+}
+
 .front #block-system-main .view .views-row .meta.submitted {
   display: none;
 }
 
-.front #block-system-main .view .views-row .node-readmore a {
-  @include button-pill (#0088AA);
+.front #block-system-main .view .views-row .view-node a {
+  @include button-pill ($blue);
+  line-height: 1.2;
   font-size: 12px;
-  border-width: 2px;
   background: transparent;
   color: #04639D;
+  border: 2px solid #0088AA;
+  
+  &:hover {
+    background-color: $blue;
+    color: white;
+  }
 }
