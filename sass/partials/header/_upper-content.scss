@@ -13,6 +13,7 @@
   @extend %social-media;
   font-size: 26px; }
 
+// #secondary-menu is the logged menu.
 #secondary-menu ul li,
 .region-header ul li {
   text-align: center;
@@ -33,6 +34,11 @@
     visibility: visible; } }
 #secondary-menu ul:hover li {
   visibility: visible; }
+
+#upper-content ul.menu li {
+  margin: 0;
+  margin-right: .5em;
+}
 
 // Little fix for awful right margin.
 .region-header .element-invisible {
