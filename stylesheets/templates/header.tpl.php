@@ -10,6 +10,7 @@
   <div id="logo-and-text">
     
     <?php if ($logo): ?>
+    <!-- DCC logo -->
     <a href="<?= $front_page; ?>"
        title="<?= t('Home'); ?>"
        rel="home" id="logo">
@@ -17,9 +18,15 @@
       <img src="<?= $logo; ?>"
            alt="<?= t('Home'); ?>">
     </a>
-    <img src="<?= image_url ('logo-lcc.png') ?>"
-         id="logo-lcc"
-         alt="Logo LCC">
+    
+    <!-- LCC logo -->
+    <a href="<?= $front_page; ?>"
+       title="<?= t('Home'); ?>"
+       rel="home">
+      <img src="<?= image_url ('logo-lcc.png') ?>"
+           id="logo-lcc"
+           alt="Logo LCC">
+    </a>
     <?php endif; ?>
     
     <? if ($site_name || $site_slogan): ?>
