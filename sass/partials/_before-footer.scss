@@ -20,7 +20,14 @@
   text-align: center; }
 #before-footer .third.column {
   text-align: right; }
+#before-footer .third.column a {
+  display: inline-block; }
 #before-footer .third.column img {
+  display: inline;
   margin-right: .5em; }
 #before-footer .third.column img.last-logo {
   margin-right: 0; }
+#before-footer .third.column img#fceia-unr {
+  width: 125px; }
+#before-footer .third.column img#logo-unr {
+  width: 60px; }
