@@ -68,13 +68,13 @@
              class="<?= ($hide_site_slogan) ? 
                           'element-invisible' : ''; ?>">
           <? # $site_slogan; ?>
-          Universidad Nacional de Rosario
+          Departamento de Ciencias de la
+          Computación
           <br>
           Facultad de Ciencias Exactas,
           Ingeniería y Agrimensura
           <br>
-          Licenciatura en Ciencias de la
-          Computación
+          Universidad Nacional de Rosario
         </div>
       <?php endif; ?>
     
