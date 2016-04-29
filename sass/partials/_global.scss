@@ -29,13 +29,9 @@ p {
   display: none; }
 
 #page {
-  max-width: 1024px;
+  width: 1150px;
   margin: 0 auto;
   background-color: white;
-  
-  @media #{more-than($desktop)} {
-    width: 85%;
-    max-width: none; }
 }
 
 .content-container.sidebar-first-on {
