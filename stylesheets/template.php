@@ -241,32 +241,36 @@ function birthofcool_links__menu_rounded_menu ($variables) {
                   "people", "envelope-inverse");
   $i     = 0; # icons index.
   
-  $h = "<ul class='clearfix'>\n";
+  $menu  = "<ul class='clearfix'>\n";
   foreach ($variables['links'] as $link) {
-    $h .= "<li>\n";
-    $h .= "<div>\n";
-    $h .= "  <a href='" . url($link['href'], $link) . "' title='" . $link['title'] . "'>";
-    $h .= "    <div class='outer-border'>\n";
-    $h .= "      <div class='inner-border'>\n";
-    $h .= "        <div>\n";
-    $h .= "          <div class='content'>\n";
-    $h .= "            <div>\n";
-    $h .= "              <i class='icon-".$icons[$i]."'></i>\n";
-    $h .= "              <h1>".$link['title']."</h1>";
-    $h .= "              <p>".$link['attributes']['title']."</p>";
-    $h .= "              <span>ver más</span>";
-    $h .= "            </div>\n";
-    $h .= "          </div>\n";
-    $h .= "        </div>\n";
-    $h .= "      </div>\n";
-    $h .= "    </div>\n";
-    $h .= "</a>\n";
-    $h .= "</div>\n";
-    $h .= "</li>\n";
+    // html = true, so $outer isn't escaped.
+    $link['html'] = true; 
+    
+    $menu .= "<li>\n";
+    $menu .= "<div>\n";
+    
+    $outer  = "<div class='outer-border'>\n";
+    $outer .= "  <div class='inner-border'>\n";
+    $outer .= "    <div>\n";
+    $outer .= "      <div class='content'>\n";
+    $outer .= "        <div>\n";
+    $outer .= "          <i class='icon-".$icons[$i]."'></i>\n";
+    $outer .= "          <h1>".$link['title']."</h1>";
+    $outer .= "          <p>".$link['attributes']['title']."</p>";
+    $outer .= "          <span>ver más</span>";
+    $outer .= "        </div>\n";
+    $outer .= "      </div>\n";
+    $outer .= "    </div>\n";
+    $outer .= "  </div>\n";
+    $outer .= "</div>\n";
+    
+    $menu .= l($outer, $link['href'], $link);
+    $menu .= "</div>\n";
+    $menu .= "</li>\n";
     
     $i++; # Increase icons index.
   }
   
-  $h .= "</ul>\n";
+  $menu .= "</ul>\n";
   
-  return $h; }
+  return $menu; }
