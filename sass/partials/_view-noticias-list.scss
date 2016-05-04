@@ -1,20 +1,34 @@
 .view-noticias-list .view-content {
+  @include clearfix ();
   margin-left: 3em;
   margin-right: 4em;
-  margin-bottom: 6em;
-}
+  margin-bottom: 6em; }
 
 .view-noticias-list .views-row {
-  float: left;
+  display: inline-block;
+  margin-right: -4px; // To remove white space.
   width: 33.333333333%;
-  margin-bottom: 6em;
-}
+  margin-bottom: 6em; }
 
-.view-noticias-list .views-row .node {
-  margin-right: 2em;
-}
+.view-noticias-list .field-imagen,
+.view-noticias-list .title,
+.view-noticias-list .body,
+.view-noticias-list .view-node {
+  width: 90%; }
 
-.view-noticias-list .content {
-  height: 6em;
-  overflow: hidden;
-}
+.view-noticias-list .title {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  height: 1.8em;
+  overflow: hidden; }
+.view-noticias-list .title a {
+  font-size: 16px;
+  font-weight: 500;
+  color: $blue; }
+.view-noticias-list .body {
+  height: 6.5em;
+  overflow: hidden; }
+.view-noticias-list .view-node a {
+  margin-top: 8px;
+  font-size: 9px;
+  @include button-pill($light-blue); }
