@@ -12,6 +12,9 @@ ul, li {
 
 a, a:visited, li a.active {
   color: $light-blue; }
+img {
+  max-width: 100%;
+}
 p {
   margin: 0; }
 

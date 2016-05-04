@@ -1,5 +1,4 @@
-<? "I hate PHP" ?>
-<? require 'helper-functions.php'; ?>
+<?php require 'helper-functions.php'; ?>
 
 <div id="header"
      class="<?= $secondary_menu ? 'with' :
