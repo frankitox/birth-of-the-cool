@@ -28,14 +28,14 @@
     </a>
     <?php endif; ?>
     
-    <? if ($site_name || $site_slogan): ?>
+    <?php if ($site_name || $site_slogan): ?>
     <div id="name-and-slogan"
          class="<?= ($hide_site_name && $hide_site_slogan) ?
                       'element-invisible' : ''; ?>">
   
-      <? if ($site_name): ?>
+      <?php if ($site_name): ?>
         
-        <? if ($title): ?>
+        <?php if ($title): ?>
         <div id="site-name"
              class="<?= ($hide_site_name) ?
                           'element-invisible' : ''; ?>">
@@ -47,8 +47,8 @@
             </a>
           </strong>
         </div>
-        <? /* Default to <H1> when empty title */ ?>
-        <? else: ?>
+        <?php // Default to <H1> when empty title ?>
+        <?php else: ?>
         <h1 id="site-name"
             class="<?= ($hide_site_name) ?
                          'element-invisible' : ''; ?>">
@@ -59,14 +59,14 @@
             <span><?= $site_name; ?></span>
           </a>
         </h1>
-        <? endif; ?>
-      <? endif; ?>
+        <?php endif; ?>
+      <?php endif; ?>
   
       <?php if ($site_slogan): ?>
         <div id="site-slogan"
              class="<?= ($hide_site_slogan) ? 
                           'element-invisible' : ''; ?>">
-          <? # $site_slogan; ?>
+          <?php # $site_slogan; ?>
           Departamento de Ciencias de la
           Computación
           <br>
@@ -78,14 +78,14 @@
       <?php endif; ?>
     
     </div><!-- #name-and-slogan -->
-    <? endif; ?>
+    <?php endif; ?>
     
     <div class="uni-logos">
       <?php require 'uni-logos.tpl.php'; ?>
     </div>
   </div><!-- #logo-and-text -->
 
-  <? if ($main_menu): ?>
+  <?php if ($main_menu): ?>
     <div id="main-menu" class="navigation">
       <?= theme('links__system_main_menu', array(
         'links' => $main_menu,
@@ -100,16 +100,16 @@
         ),
       )); ?>
     </div><!-- #main-menu -->
-  <? endif; ?>
+  <?php endif; ?>
 
-  <? if ($page['header_bottom_right']): ?>
+  <?php if ($page['header_bottom_right']): ?>
   <?= render($page['header_bottom_right']); ?>
-  <? endif; ?>
+  <?php endif; ?>
 
   <div id="upper-content" class="clearfix">
     <?= render($page['header']); ?>
 
-    <? if ($secondary_menu): ?>
+    <?php if ($secondary_menu): ?>
       <div id="secondary-menu" class="navigation">
         <?= theme('links__menu_login_menu', array(
           'links' => $secondary_menu,
@@ -124,7 +124,7 @@
           ),
         )); ?>
       </div> <!-- /#secondary-menu -->
-    <? endif; ?>
+    <?php endif; ?>
   
     <div class="social-media">
       <?php require 'social-media.tpl.php'; ?>
