@@ -1,4 +1,4 @@
-<a href="http://fceia.unr.edu.ar/"
+<a href="http://www.fceia.unr.edu.ar/"
    title="Facultad de Cs. Exactas y Agrimensura"
    target="_blank">
   <img src="<?= image_url ('logo-fceia.png') ?>"
