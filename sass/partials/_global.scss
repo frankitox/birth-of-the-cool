@@ -47,8 +47,8 @@ p {
   @include clearfix ();
   width: 100%; }
 #content .section {
-  margin: 1em;
-  margin-top: 2em; }
+  margin: 1em; }
+
 h1, h2 {
   @extend %small-header;
   margin: 0;

@@ -1,3 +1,7 @@
+// Hide default title.
+body.node-type-materia .section > .title {
+  display: none; }
+
 .materia-header .left {
   float: left; }
 .materia-header .left h1 {
