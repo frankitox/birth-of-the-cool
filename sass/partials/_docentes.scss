@@ -2,17 +2,43 @@
   @include clearfix (); }
 .view-docentes .views-row {
   float: left;
-  margin-left: 1em;
-  margin-bottom: 1em;
-  border: 1px solid #0592D9;
-  padding: .75em; }
+  padding-right: 1em;
+  width: 20%;
+  box-sizing: border-box; }
 .view-docentes .inner-row .views-field {
   display: block; }
 
+.view-docentes .field-foto {
+  padding: 10px 10px 0 10px;
+  border-top: 1px solid #0592D9;
+  border-right: 1px solid #0592D9;
+  border-left: 1px solid #0592D9; }
+.view-docentes .field-foto a {
+  display: block;
+  text-align: center;
+  font-size: 0; }
+.view-docentes .field-foto a img {
+  border-radius: 4px; }
+
+.view-docentes .title {
+  padding: 5px 10px;
+  border-right: 1px solid #0592D9;
+  border-left: 1px solid #0592D9; }
 .view-docentes .title a {
+  display: block;
+  height: 1.5em;
+  overflow: hidden;
+  text-align: center;
   font-size: 16px;
   color: $blue;
   font-weight: 500; }
+
+.view-docentes .field-contacto-doc {
+  height: 98px;
+  padding: 5px 10px 10px 10px;
+  border-right: 1px solid #0592D9;
+  border-bottom: 1px solid #0592D9;
+  border-left: 1px solid #0592D9; }
 
 // This are the styles related to the view
 // of a particular teacher.
