@@ -1,18 +1,39 @@
-.item-list ul.pager {
+// Line to wipe default padding:
+.item-list .pager li {
+  padding: 0; }
+
+ul.pager {
   float: right; }
-.item-list ul.pager li {
+ul.pager li {
   float: left;
   margin: 0;
-  padding: 0; }
-.item-list ul.pager li.pager-current {
+  color: $header-blue; }
+
+ul.pager li.pager-current {
   padding: .25em .5em;
   color: white;
-  background-color: $light-blue; }
+  background-color: $header-blue; }
+
 ul.pager li a {
   display: block;
   padding: .25em .5em;
+  font-weight: 500;
   color: $header-blue; }
 ul.pager li a:hover {
   color: white;
   background-color: $header-blue;
+  @include transition (all 1s); }
+
+ul.pager li.pager-first a,
+ul.pager li.pager-previous a,
+ul.pager li.pager-next a,
+ul.pager li.pager-last a {
+  color: white;
+  background-color: $blue; }
+ul.pager li.pager-first a:hover,
+ul.pager li.pager-previous a:hover,
+ul.pager li.pager-next a:hover,
+ul.pager li.pager-last a:hover {
+  color: $header-blue;
+  background-color: white;
   @include transition (all 1s); }
