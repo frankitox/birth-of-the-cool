@@ -144,10 +144,6 @@
     <?php require 'events.tpl.php'; ?>
   <?php endif; ?>
   
-  <div id="before-footer" class="clearfix">
-    <?php require 'before-footer.tpl.php'; ?>
-  </div>
-  
   <?php if ($page['pre_footer']): ?>
   <div id="pre-footer" class="clearfix">
     <?php print render($page['pre_footer']); ?>
@@ -162,6 +158,10 @@
     </div></div> <!-- /#triptych, /#triptych-wrapper -->
   <?php endif; ?>
 
+  <div id="before-footer" class="clearfix">
+    <?php require 'before-footer.tpl.php'; ?>
+  </div>
+  
   <div id="footer-wrapper"><div class="section">
 
     <?php if ($page['f_firstcolumn'] || $page['f_secondcolumn'] || $page['f_thirdcolumn'] || $page['f_fourthcolumn']): ?>
