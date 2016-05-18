@@ -1,0 +1,49 @@
+.page-eventos-list #page-title {
+  margin-left: 40px;
+  margin-bottom: 24px;
+  margin-top: 24px; }
+
+.view-eventos-list .view-content {
+  @include clearfix ();
+  margin-left: 40px;
+  margin-right: 45px;
+  margin-bottom: 50px; }
+
+.view-eventos-list .views-row {
+  display: inline-block;
+  margin-right: -4px; // To remove white space.
+  width: 33.333333333%;
+  margin-bottom: 6em; }
+
+.view-eventos-list .field-fecha,
+.view-eventos-list .title,
+.view-eventos-list .body,
+.view-eventos-list .view-node {
+  width: 90%; }
+
+.view-eventos-list .field-fecha {
+  margin-bottom: .5em;
+  height: 43px;
+  padding-left: 60px;
+  background-image: url("images/calendar.png");
+  background-repeat: no-repeat;
+  font-size: 13px;
+  font-weight: 600;
+  color: $cool-blue;
+  box-sizing: border-box; }
+.view-eventos-list .title {
+  margin-top: 8px;
+  margin-bottom: 4px;
+  height: 1.8em;
+  overflow: hidden; }
+.view-eventos-list .title a {
+  font-size: 16px;
+  font-weight: 500;
+  color: $blue; }
+.view-eventos-list .body {
+  height: 6.5em;
+  overflow: hidden; }
+.view-eventos-list .view-node a {
+  margin-top: 8px;
+  font-size: 9px;
+  @include button-pill($light-blue); }
