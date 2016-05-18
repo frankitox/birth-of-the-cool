@@ -20,12 +20,8 @@ Para la view usa un template custom en
 templates/views-view-unformatted--noticias-lcc.tpl.php
 
 Implementación del LogIn:
-  Para loguearse el usuario debe hacerlo
-usando HTTPS, para ello se emplea el puerto
-444. Hay un menú 'login menu' que posee un
-solo elemento llamado 'login' el cual es un
-enlace hardcodeado a la dirección de login
-en puerto 444.
+  Básicamente hay un menú llamado login con
+un sólo link a la dirección `user`.
 
 BackUp del sitio:
   Se hace un backup semanal de kleene usando
