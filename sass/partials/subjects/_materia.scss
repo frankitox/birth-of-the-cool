@@ -30,6 +30,10 @@ body.node-type-materia .section > .title {
 .field-name-field-docentes {
   float: left;
 }
+.field-name-field-docentes .node-docente h2 a {
+  color: $blue; }
+.field-name-field-docentes .node-docente .content {
+  display: inline-block; }
 .field-name-field-docentes img {
   border-radius: 50%;
 }
