@@ -7,7 +7,6 @@
 <div class="section clearfix">
   
   <div id="logo-and-text">
-    
     <?php if ($logo): ?>
     <!-- DCC logo -->
     <a href="<?= $front_page; ?>"
@@ -16,10 +15,13 @@
       
       <img src="<?= $logo; ?>"
            alt="<?= t('Home'); ?>">
+      <?php if ($site_slogan): ?>
+      <span><?php print $site_slogan; ?></span>
+      <?php endif; ?>
     </a>
     
     <!-- LCC logo -->
-    <a href="<?= $front_page; ?>"
+    <a href="<?= $front_page; ?>" id="logo-lcc"
        title="<?= t('Home'); ?>"
        rel="home">
       <img src="<?= image_url ('logo-lcc.png') ?>"
@@ -32,7 +34,6 @@
     <div id="name-and-slogan"
          class="<?= ($hide_site_name && $hide_site_slogan) ?
                       'element-invisible' : ''; ?>">
-  
       <?php if ($site_name): ?>
         
         <?php if ($title): ?>
