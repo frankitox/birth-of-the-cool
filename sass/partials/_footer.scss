@@ -17,7 +17,10 @@
 
 #footer .menu {
   @include menu ();
-
+  float: left;
+  margin: 0;
+  padding: 0;
+  
   & li {
     // TODO: find out why I have to clean
     // this?
@@ -33,3 +36,6 @@
   & li ul {
     display: none; }
 }
+
+#footer .hedra {
+  float: right; }

@@ -176,6 +176,9 @@
     <?php if ($page['footer']): ?>
       <div id="footer" class="clearfix">
         <?php print render($page['footer']); ?>
+        <div class="hedra">
+          Diseñado por <img src="<?= image_url ('hedra.png'); ?>">
+        </div>
       </div> <!-- /#footer -->
     <?php endif; ?>
 

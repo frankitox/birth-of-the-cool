@@ -76,6 +76,7 @@
   height: 8px;
   margin-right: 20px;
   float: left;
+  border: 2px solid $light-blue;
   border-radius: 50%;
   text-align: center;
   line-height: 8px;
@@ -85,6 +86,7 @@
 }
 .views-slideshow-controls-bottom
 .views-slideshow-pager-field-item.active {
+  border: 2px solid $light-blue;
   background: white;
 }
 
