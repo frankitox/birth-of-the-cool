@@ -177,7 +177,10 @@
       <div id="footer" class="clearfix">
         <?php print render($page['footer']); ?>
         <div class="hedra">
-          Diseñado por <img src="<?= image_url ('hedra.png'); ?>">
+          Diseñado por
+          <a href="http://estudiohedra.com" target="_blank">
+            <img src="<?= image_url ('hedra.png'); ?>">
+          </a>
         </div>
       </div> <!-- /#footer -->
     <?php endif; ?>
