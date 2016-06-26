@@ -53,7 +53,7 @@
   <?php endif; ?>
 
   <?php if ($rows): ?>
-    <h2><span>Próximos Eventos</span></h2>
+    <h2><span><?= t('Upcoming events') ?></span></h2>
     <div class="view-content contents-wrapper">
       <div class="contents clearfix">
         <?php print $rows; ?>

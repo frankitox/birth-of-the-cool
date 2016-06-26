@@ -1,8 +1,8 @@
   <div>
     <div class="first column">
-      <h1>Contacto</h1>
-      <p>Administradores: webmasterlcc@fceia.unr.edu.ar<br>
-      Consultas: ingrlcc@fceia.unr.edu.ar
+      <h1><?= t('Contact') ?></h1>
+      <p><?= t('Administration') ?>: webmasterlcc@fceia.unr.edu.ar<br>
+      <?= t('Enquiries') ?>: ingrlcc@fceia.unr.edu.ar
       </p>
     </div>
     <div class="second column">

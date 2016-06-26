@@ -21,7 +21,7 @@
         
         <a class="more-link"
            href="<?php print url("noticias-list") ?>">
-          Noticias Anteriores »
+          <?= t('Previous news »') ?>
         </a>
       </div>
     <?php endif; ?>

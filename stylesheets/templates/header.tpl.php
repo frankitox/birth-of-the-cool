@@ -68,13 +68,11 @@
              class="<?= ($hide_site_slogan) ? 
                           'element-invisible' : ''; ?>">
           <?php # $site_slogan; ?>
-          Departamento de Ciencias de la
-          Computación
+          <?= t('Computer Science Department'); ?>
           <br>
-          Facultad de Ciencias Exactas,
-          Ingeniería y Agrimensura
+          <?= t('Faculty of Exact Sciences, Engineering and Surveying'); ?>
           <br>
-          Universidad Nacional de Rosario
+          <?= t('National University of Rosario'); ?>
         </div>
       <?php endif; ?>
     
