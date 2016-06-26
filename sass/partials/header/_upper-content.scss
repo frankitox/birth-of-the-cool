@@ -31,6 +31,8 @@
   background-color: $dark-blue; }
 #secondary-menu {
   margin-right: .5em; }
+#secondary-menu ul {
+  list-style: none; }
 #secondary-menu li {
   visibility: hidden;
   &.first {

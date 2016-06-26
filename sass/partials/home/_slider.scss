@@ -39,6 +39,7 @@
   overflow: hidden;
   height: 20px;
   display: inline-block;
+  @extend %ellipsis;
 }
 #widget_pager_top_slide-block
 .views-slideshow-pager-field-item

@@ -47,7 +47,8 @@
   overflow: hidden;
   font-size: 15px;
   font-weight: 600;
-  color: #006AA4; }
+  color: #006AA4;
+  @extend %ellipsis; }
 
 .view-front-page-events .body {
   height: 44px;
