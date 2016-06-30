@@ -1,11 +1,6 @@
 #!/bin/bash
 
-# quickfixCa
-
-# down
-# octoman
-# quickfix12
-# quickfix4124
+# octopus:
 
 THEME_FOLDER=/var/www/html/weblcc/themes/birthofcool
 
