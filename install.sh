@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# octopus:
-
 THEME_FOLDER=/var/www/html/weblcc/themes/birthofcool
 
 rm -rf $THEME_FOLDER
