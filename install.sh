@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# quickfix
+# quickfixC
 # quickfix12
 # quickfix4124
 
