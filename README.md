@@ -1,4 +1,4 @@
-# How to code [devel].
+# How to code.
 This project was set up using
 [this](http://thesassway.com/beginner/getting-started-with-sass-and-compass)
 article. Basically you should do `gem
