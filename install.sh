@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# quickfixC
+# quickfixCa
 # down
 # octoman
 # quickfix12
