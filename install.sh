@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # quickfix
-# quickfix1
+# quickfix12
 
 THEME_FOLDER=/var/www/html/weblcc/themes/birthofcool
 
