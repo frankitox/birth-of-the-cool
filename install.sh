@@ -1,6 +1,8 @@
 #!/bin/bash
 
 
+# this is da branch
+
 THEME_FOLDER=/var/www/html/weblcc/themes/birthofcool
 
 rm -rf $THEME_FOLDER
