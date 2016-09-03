@@ -5,6 +5,12 @@ body {
   font: 13px Hind, sans-serif;
   color: #636363; }
 
+/* CKEditor */
+body.cke_editable {
+  background-color: white;
+  background-image: none;
+  padding: 16px; }
+
 a, a:visited, li a.active {
   color: $light-blue; }
 img {
