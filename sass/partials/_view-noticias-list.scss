@@ -37,3 +37,11 @@
   margin-top: 8px;
   font-size: 9px;
   @include button-pill($light-blue); }
+
+.view-noticias-list .views-field-title a {
+  display: inline-block;
+  max-width: 100%;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
