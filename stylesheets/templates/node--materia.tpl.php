@@ -92,7 +92,7 @@
     <?php print render($content['field_plan']) ?>
   </div>
   <?php endif; ?>
-  
+
   <?php print render($title_prefix); ?>
   <?php if (!$page): ?>
     <h2<?php print $title_attributes; ?>>
@@ -116,7 +116,7 @@
     ?>
     <div class="field-group">
       <?php print render($content['field_docentes']) ?>
-      <?php print render($content['field_horarios']) ?>
+      <?php print render($content['field_horario']) ?>
     </div>
     <?php
       print render($content);

@@ -21,61 +21,61 @@ body.node-type-materia .section > .title {
 .materia-header .field-name-field-plan a {
   @include button-pill (#009AEE); }
 
-.field-label {
-  color: $blue; }
+.field .field-label {
+  color: $blue;
+}
 
 .field-group {
   @include clearfix ();
-  margin-top: 2em; }
-.field-name-field-docentes {
+  margin-top: 2em;
+}
+
+.field-group .field-name-field-docentes {
   float: left;
 }
-.field-name-field-docentes .node-docente h2 a {
-  color: $blue; }
-.field-name-field-docentes .node-docente .content {
-  display: inline-block; }
-.field-name-field-docentes img {
+.field-group .field-name-field-docentes .node-docente h2 a {
+  color: $blue;
+}
+.field-group .field-name-field-docentes .node-docente .content {
+  display: inline-block;
+}
+.field-group .field-name-field-docentes img {
   border-radius: 50%;
 }
-.field-collection-container {
-  float: right;
-  margin: 10px 0; // Needed for the box-shadow
-  padding: 2em;
-  border: 1px solid white;
-  color: white;
-  background: $light-blue;
-  box-shadow: 0px 7px 10px -5px #CFCFCF, 0px -7px 10px -5px #CFCFCF; }
 
-.field-collection-container a,
-.field-collection-container .field-label {
-  color: white; }
-
-.field-name-field-docentes > .field-label {
+.field-group .field-name-field-docentes > .field-label {
   font-weight: bold;
   color: $blue; }
-.field-name-field-docentes > .field-items {
+.field-group .field-name-field-docentes > .field-items {
   @include clearfix (); }
-.field-name-field-docentes > .field-items > .field-item {
+.field-group .field-name-field-docentes > .field-items > .field-item {
   float: left;
   margin-right: 1.5em;
   text-align: center; }
 
-.field-name-field-horarios {
+.field-group .field-name-field-horario {
+  float: right;
+  margin: 10px 0; // Needed for the box-shadow
   border-left: 1px solid white;
-  padding-left: .5em;
+  padding: 1.5rem;
+  border: 1px solid white;
+  color: white;
+  background: $light-blue;
+  box-shadow: 0px 7px 10px -5px #CFCFCF, 0px -7px 10px -5px #CFCFCF;
 }
-
-// Texto de horario
-.field-name-field-horarios .date-display-range {
-  display: inline-block; }
-.field-name-field-horarios > .field-label {
+.field-group .field-name-field-horario a,
+.field-group .field-name-field-horario .field-label {
+  color: white;
+}
+.field-group .field-name-field-horario .field-label {
   font-size: 16px;
-  font-weight: 500; }
-.field-name-field-horarios .content {
-  font-size: 12px;
-  font-weight: 400; }
-.field-name-field-horarios .field-label-inline .field-label {
-  font-weight: 400; }
+  font-weight: 500;
+}
+.field-group .field-name-field-horario .field-items ul {
+  border: 1px solid white;
+  padding-left: .5rem;
+  list-style: none;
+}
 
 .field-name-field-lista,
 .field-name-field-descripcion,
