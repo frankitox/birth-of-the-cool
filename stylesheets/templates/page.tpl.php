@@ -182,6 +182,12 @@
             <img src="<?= image_url ('hedra.png'); ?>">
           </a>
         </div>
+        <div id="sitemap">
+          <a class="more-link"
+             href="<?php print url("sitemap") ?>">
+            Sitemap
+          </a>
+        </div>
       </div> <!-- /#footer -->
     <?php endif; ?>
 
