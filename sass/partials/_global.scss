@@ -46,9 +46,12 @@ p {
 
 #content {
   @include clearfix ();
-  width: 100%; }
+  min-height: 500px;
+  width: 100%;
+}
 #content .section {
-  margin: 1em; }
+  margin: 1em;
+}
 
 h1, h2 {
   @extend %small-header;
