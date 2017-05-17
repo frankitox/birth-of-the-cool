@@ -1,4 +1,4 @@
-@mixin button-pill ($color) {
+@mixin button-pill($color) {
   display: inline-block;
   padding-top: 3px;
   padding-right: 6px;
@@ -13,9 +13,13 @@
   cursor: pointer;
 
   &:hover {
-    @include transition (background-color 1s);
+    @include transition(background-color 1s);
+
     background-color: transparent;
-    color: $color; }
+    color: $color;
+  }
+
   &:after {
-    content: ' »'; }
+    content: " »";
+  }
 }

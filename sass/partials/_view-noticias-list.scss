@@ -1,42 +1,57 @@
 .page-noticias-list #page-title {
   margin-left: 40px;
   margin-bottom: 24px;
-  margin-top: 24px; }
+  margin-top: 24px;
+}
 
 .view-noticias-list .view-content {
-  @include clearfix ();
+  @include clearfix;
+
   margin-left: 40px;
   margin-right: 45px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+}
 
 .view-noticias-list .views-row {
   display: inline-block;
-  margin-right: -4px; // To remove white space.
-  width: 33.333333333%;
-  margin-bottom: 6em; }
+  margin-right: -4px;
+
+  // To remove white space.
+  width: 33.33333%;
+  margin-bottom: 6em;
+}
 
 .view-noticias-list .field-imagen,
 .view-noticias-list .title,
 .view-noticias-list .body,
 .view-noticias-list .view-node {
-  width: 90%; }
+  width: 90%;
+}
 
 .view-noticias-list .title {
   margin-top: 8px;
   margin-bottom: 4px;
   height: 1.8em;
-  overflow: hidden; }
+  overflow: hidden;
+}
+
 .view-noticias-list .title a {
   font-size: 16px;
   font-weight: 500;
-  color: $blue; }
+  color: $blue;
+}
+
 .view-noticias-list .body {
   height: 6.5em;
-  overflow: hidden; }
+  overflow: hidden;
+}
+
 .view-noticias-list .view-node a {
   margin-top: 8px;
   font-size: 9px;
-  @include button-pill($light-blue); }
+
+  @include button-pill($light-blue);
+}
 
 .view-noticias-list .views-field-title a {
   display: inline-block;

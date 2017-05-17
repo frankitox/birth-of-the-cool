@@ -3,34 +3,45 @@ body {
   background-color: #D4D4D4;
   background-image: url("images/fondo.png");
   font: 13px Hind, sans-serif;
-  color: #636363; }
+  color: #636363;
+}
 
 /* CKEditor */
 body.cke_editable {
   background-color: white;
   background-image: none;
-  padding: 16px; }
+  padding: 16px;
+}
 
 a, a:visited, li a.active {
-  color: $light-blue; }
+  color: $light-blue;
+}
+
 img {
   max-width: 100%;
 }
+
 p {
-  margin: 0; }
+  margin: 0;
+}
 
 // Fix drupal's clearfix.
 .clearfix:after {
-  content: ' '; }
+  content: " ";
+}
 
 // Buttons.
 .button {
-  @include button-pill ($dark-blue); }
+  @include button-pill($dark-blue);
+}
+
 .button-dark-blue {
-  @include button-pill ($dark-blue); }
+  @include button-pill($dark-blue);
+}
 
 #breadcrumb {
-  display: none; }
+  display: none;
+}
 
 #page {
   width: 1150px;
@@ -39,37 +50,50 @@ p {
 }
 
 .content-container.sidebar-first-on {
-  margin-left: $sidebar-width; }
+  margin-left: $sidebar-width;
+}
+
 .content-container.sidebar-first-on > #content {
   float: left;
-  box-shadow: -1em -1em 2.5em -.25em #BEBEBE; }
+  box-shadow: (-1em) -1em 2.5em -0.25em #BEBEBE;
+}
 
 #content {
-  @include clearfix ();
+  @include clearfix;
+
   min-height: 500px;
   width: 100%;
 }
+
 #content .section {
   margin: 1em;
 }
 
 h1, h2 {
   @extend %small-header;
+
   margin: 0;
-  color: $header-blue; }
+  color: $header-blue;
+}
 
 #content strong {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 .sidebar-second-on .section-wrapper {
   float: left;
-  width: 70%; }
+  width: 70%;
+}
+
 .sidebar-second-on #sidebar-second {
   float: left;
-  width: 30%; }
+  width: 30%;
+}
 
 ul li.statistics_counter {
-  display: none; }
+  display: none;
+}
 
 div.messages {
-  margin: 1em; }
+  margin: 1em;
+}

@@ -2,14 +2,14 @@
   margin: 0;
   margin-left: -1em;
   border: 0;
-  padding: .625em 2em;
+  padding: 0.625em 2em;
   background-color: #00436A;
-  background-image: url('images/lupa.png');
+  background-image: url("images/lupa.png");
   background-size: 35%;
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
   text-indent: -9999px;
-  
-  @include on-hover-light-up ();
+
+  @include on-hover-light-up;
 }

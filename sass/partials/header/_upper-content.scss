@@ -2,77 +2,112 @@
   position: absolute;
   top: 0;
   right: 1.5em;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+}
+
 #upper-content ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 #secondary-menu, .region-header, .social-media {
   float: right;
-  font-size: 14px; }
+  font-size: 14px;
+}
 
 .social-media {
-  margin-right: .125em;
+  margin-right: 0.125em;
+
   @extend %social-media;
-  font-size: xx-large; }
+
+  font-size: xx-large;
+}
 
 // #secondary-menu is the logged menu.
 #secondary-menu ul li,
 .region-header ul li {
   text-align: center;
   background-color: $blue;
-  @include on-hover-light-up (); }
+
+  @include on-hover-light-up;
+}
+
 #secondary-menu ul li a,
 .region-header ul li a {
   box-sizing: border-box;
   display: inline-block;
-  padding: .25em .5em;
+  padding: 0.25em 0.5em;
   width: 100%;
-  background-color: $dark-blue; }
+  background-color: $dark-blue;
+}
+
 #secondary-menu {
-  margin-right: .5em; }
+  margin-right: 0.5em;
+}
+
 #secondary-menu ul {
-  list-style: none; }
+  list-style: none;
+}
+
 #secondary-menu li {
   visibility: hidden;
+
   &.first {
-    visibility: visible; } }
+    visibility: visible;
+  }
+}
+
 #secondary-menu ul:hover li {
-  visibility: visible; }
+  visibility: visible;
+}
 
 // Login menu
 #upper-content ul.menu li {
   margin: 0;
-  margin-right: .5em;
+  margin-right: 0.5em;
 }
 
 // Little fix for awful right margin.
 .region-header .element-invisible {
-  display: none; }
+  display: none;
+}
 
 #block-locale-language,
 #block-menu-menu-login-menu {
-  float: left; }
+  float: left;
+}
 
 ul li.leaf {
   list-style: none;
-  padding: 0; }
+  padding: 0;
+}
 
 #secondary-menu ul li a,
 .region-header ul li a {
-  @include on-hover-light-up (); }
+  @include on-hover-light-up;
+}
 
 #block-locale-language ul:hover li {
-  display: block; }
+  display: block;
+}
+
 #block-locale-language ul li {
-  display: none; }
+  display: none;
+}
+
 #block-locale-language ul li.active {
-  display: block; }
+  display: block;
+}
+
 #block-locale-language ul li.active a i {
-  padding-left: .5em;
-  font-size: 65%; }
+  padding-left: 0.5em;
+  font-size: 65%;
+}
+
 #block-locale-language ul li a:hover {
-  background-color: $light-blue; }
+  background-color: $light-blue;
+}
 
 .logged-in #block-menu-menu-login-menu {
-  display: none; }
+  display: none;
+}

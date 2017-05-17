@@ -1,15 +1,16 @@
 .front #block-system-main {
-  @include clearfix ();
-  border-bottom: 1px solid rgba(154,154,154,.2);
+  @include clearfix;
+
+  border-bottom: 1px solid rgba(154, 154, 154, 0.2);
 }
 
 .front #block-system-main .view .views-row {
   float: left;
-  width: 33.3333333%;
+  width: 33.33333%;
   margin: 32px 0;
   padding: 0 16px;
   box-sizing: border-box;
-  border-left: 1px solid rgba(154,154,154,.2);
+  border-left: 1px solid rgba(154, 154, 154, 0.2);
 }
 
 .front #block-system-main .view .views-row img {
@@ -20,6 +21,7 @@
 .front #block-system-main .view .views-row .inner-row .title {
   margin-top: 8px;
 }
+
 .front #block-system-main .view .views-row .inner-row .title a {
   font-size: 16px;
   font-weight: 500;
@@ -38,13 +40,14 @@
 }
 
 .front #block-system-main .view .views-row .view-node a {
-  @include button-pill ($blue);
+  @include button-pill($blue);
+
   line-height: 1.2;
   font-size: 12px;
   background: transparent;
   color: #04639D;
   border: 2px solid #0088AA;
-  
+
   &:hover {
     background-color: $blue;
     color: white;

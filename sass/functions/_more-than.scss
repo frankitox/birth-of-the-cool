@@ -1,4 +1,5 @@
 @charset "UTF-8";
 
 @function more-than($measure) {
-  @return '(min-width: #{$measure})'; }
+  @return "(min-width: #{$measure})";
+}

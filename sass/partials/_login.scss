@@ -2,10 +2,14 @@
 #user-login .form-required,
 #user-login form h2,
 #user-pass .form-required {
-  display: none; }
+  display: none;
+}
+
 #user-login .item-list li {
-  margin: 0; }
+  margin: 0;
+}
 
 #user-login input[type=submit],
 #user-pass input[type=submit] {
-  @include button-pill ($blue); }
+  @include button-pill($blue);
+}

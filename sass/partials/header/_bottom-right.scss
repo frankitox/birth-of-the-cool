@@ -1,11 +1,16 @@
 .region-header-bottom-right {
   position: absolute;
-  bottom: .125em;
-  right: .5em;
-  text-align: right; }
+  bottom: 0.125em;
+  right: 0.5em;
+  text-align: right;
+}
 
 .region-header-bottom-right input[type=text] {
   @extend %input-text;
-  width: 325px; }
+
+  width: 325px;
+}
+
 .region-header-bottom-right input[type=submit] {
-  @extend %submit-search; }
+  @extend %submit-search;
+}

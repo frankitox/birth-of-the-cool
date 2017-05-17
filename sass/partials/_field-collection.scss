@@ -1,16 +1,26 @@
 ul.field-collection-view-links {
-  @include clearfix (); }
+  @include clearfix;
+}
+
 ul.field-collection-view-links li {
   float: right;
-  margin-left: .25em;
-  font-weight: 500; }
+  margin-left: 0.25em;
+  font-weight: 500;
+}
+
 ul.field-collection-view-links li:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}
 
 ul.action-links {
-  @include clearfix (); }
+  @include clearfix;
+}
+
 ul.action-links li {
   float: right;
-  font-weight: 500; }
+  font-weight: 500;
+}
+
 ul.action-links li:hover {
-  text-decoration: underline; }
+  text-decoration: underline;
+}

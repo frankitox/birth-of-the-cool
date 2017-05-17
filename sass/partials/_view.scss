@@ -1,14 +1,21 @@
 .view .meta.submitted {
   font-size: 9px;
   font-weight: lighter;
-  color: #9B9B9B; }
+  color: #9B9B9B;
+}
 
 .view .link-wrapper {
-  margin-top: .5em; }
+  margin-top: 0.5em;
+}
+
 .view li.node-readmore {
-  padding-left: 0; }
+  padding-left: 0;
+}
+
 .view li.node-readmore a {
-  @include button-pill ($light-blue);
-  padding: .25em .5em;
+  @include button-pill($light-blue);
+
+  padding: 0.25em 0.5em;
   padding-bottom: 0;
-  font-size: 9px; }
+  font-size: 9px;
+}

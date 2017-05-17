@@ -4,45 +4,60 @@
   padding: 1.25em $left-pad;
   padding-bottom: 1em;
   background-color: $blue;
-  color: white; }
+  color: white;
+}
 
 #footer-wrapper a {
-  color: white; }
+  color: white;
+}
 
 #footer-wrapper .section {
-  font-size: 12px; }
+  font-size: 12px;
+}
 
 #footer .block-menu h2 {
-  display: none; }
+  display: none;
+}
 
 #footer .menu {
-  @include menu ();
+  @include menu;
+
   float: left;
   margin: 0;
   padding: 0;
-  
+
   & li {
     // TODO: find out why I have to clean
     // this?
     margin: 0;
-    padding: 0; }
+    padding: 0;
+  }
+
   & li a {
     border-right: 1px solid white;
-    padding: 0 $chunk; }
+    padding: 0 $chunk;
+  }
+
   & li.first a {
-    padding-left: 0; }
+    padding-left: 0;
+  }
+
   & li.last a {
-    border-right: 0; }
+    border-right: 0;
+  }
+
   & li ul {
-    display: none; }
+    display: none;
+  }
 }
 
 #footer #sitemap {
   float: right;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
   border-right: 1px solid white;
-  padding-right: .5rem;
+  padding-right: 0.5rem;
 }
 
 #footer .hedra {
-  float: right; }
+  float: right;
+}

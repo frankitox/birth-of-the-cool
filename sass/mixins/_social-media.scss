@@ -1,10 +1,13 @@
 %social-media {
-  padding-top: .125em;
+  padding-top: 0.125em;
   font-size: xx-large;
   font-family: "myfont";
-  
+
   a:hover i {
-    color: $light-blue; }
-  
+    color: $light-blue;
+  }
+
   i {
-    padding-right: .125em; } }
+    padding-right: 0.125em;
+  }
+}

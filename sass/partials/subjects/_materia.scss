@@ -1,61 +1,84 @@
 // Hide default title.
 body.node-type-materia .section > .title {
-  display: none; }
+  display: none;
+}
 
 .materia-header .left {
-  float: left; }
+  float: left;
+}
+
 .materia-header .left h1 {
   font-size: 27px;
   font-weight: 500;
-  color: $blue; }
+  color: $blue;
+}
+
 .materia-header .left .field-name-field-codigo {
-  margin-top: -.5em;
+  margin-top: -0.5em;
   font-size: 18px;
   font-weight: 500;
   text-transform: uppercase;
-  color: #707070; }
+  color: #707070;
+}
+
 .materia-header .field-name-field-plan {
-  float: right; }
+  float: right;
+}
+
 .materia-header .field-name-field-plan img {
-  display: none; }
+  display: none;
+}
+
 .materia-header .field-name-field-plan a {
-  @include button-pill (#009AEE); }
+  @include button-pill(#009AEE);
+}
 
 .field .field-label {
   color: $blue;
 }
 
 .field-group {
-  @include clearfix ();
+  @include clearfix;
+
   margin-top: 2em;
 }
 
 .field-group .field-name-field-docentes {
   float: left;
 }
+
 .field-group .field-name-field-docentes .node-docente h2 a {
   color: $blue;
 }
+
 .field-group .field-name-field-docentes .node-docente .content {
   display: inline-block;
 }
+
 .field-group .field-name-field-docentes img {
   border-radius: 50%;
 }
 
 .field-group .field-name-field-docentes > .field-label {
   font-weight: bold;
-  color: $blue; }
+  color: $blue;
+}
+
 .field-group .field-name-field-docentes > .field-items {
-  @include clearfix (); }
+  @include clearfix;
+}
+
 .field-group .field-name-field-docentes > .field-items > .field-item {
   float: left;
   margin-right: 1.5em;
-  text-align: center; }
+  text-align: center;
+}
 
 .field-group .field-name-field-horario {
   float: right;
-  margin: 10px 0; // Needed for the box-shadow
+  margin: 10px 0;
+
+  // Needed for the box-shadow
   border-left: 1px solid white;
   padding: 1.5rem;
   border: 1px solid white;
@@ -63,17 +86,20 @@ body.node-type-materia .section > .title {
   background: $light-blue;
   box-shadow: 0px 7px 10px -5px #CFCFCF, 0px -7px 10px -5px #CFCFCF;
 }
+
 .field-group .field-name-field-horario a,
 .field-group .field-name-field-horario .field-label {
   color: white;
 }
+
 .field-group .field-name-field-horario .field-label {
   font-size: 16px;
   font-weight: 500;
 }
+
 .field-group .field-name-field-horario .field-items ul {
   border-left: 1px solid white;
-  padding-left: .5rem;
+  padding-left: 0.5rem;
   list-style: none;
 }
 
@@ -81,7 +107,9 @@ body.node-type-materia .section > .title {
 .field-name-field-descripcion,
 .field-name-field-anio,
 .field-name-field-cuatrim {
-  margin-bottom: 1em; }
+  margin-bottom: 1em;
+}
 
 .field-name-field-imagen-materia img {
-  width: 100%; }
+  width: 100%;
+}

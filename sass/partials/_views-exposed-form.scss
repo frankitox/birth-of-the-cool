@@ -2,25 +2,33 @@
 .views-exposed-form .views-exposed-widget,
 .views-exposed-form .views-submit-button {
   padding: 0;
-  margin: 0; }
+  margin: 0;
+}
+
 .views-exposed-form label[for="edit-keys"] {
-  display: none; }
+  display: none;
+}
 
 // Search input.
 .views-exposed-form input[type=text] {
   @extend %input-text;
+
   width: 150px;
-  padding: .3em 1.25em; }
+  padding: 0.3em 1.25em;
+}
 
 // Search button.
 .views-exposed-form .views-exposed-widget .form-submit {
   @extend %submit-search;
-  padding: .3em 1.25em;
-  background-size: 50%; }
+
+  padding: 0.3em 1.25em;
+  background-size: 50%;
+}
 
 // Add border to the whole construction.
 .views-exposed-form input[type=text],
 .views-exposed-form input[type=text]:focus,
 .views-exposed-form .views-exposed-widget .form-submit {
   border: 1px solid $blue;
-  outline: none; }
+  outline: none;
+}

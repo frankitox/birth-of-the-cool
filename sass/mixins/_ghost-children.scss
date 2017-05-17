@@ -17,18 +17,21 @@
 ///   vertical-align: middle;
 /// }
 
-@mixin ghost-children ($pseudo: before, $margin-right: null) {
+@mixin ghost-children($pseudo: before, $margin-right: null) {
   text-align: center;
-  
+
   &:#{$pseudo} {
     content: "";
     display: inline-block;
     height: 100%;
+
     @if $margin-right {
       margin-right: $margin-right;
-    } @else {
+    }
+    @else {
       margin-right: -0.25em;
     }
+
     vertical-align: middle;
   }
 }

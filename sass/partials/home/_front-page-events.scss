@@ -1,18 +1,27 @@
 .view-front-page-events {
   margin-bottom: 12px;
   line-height: 1.2;
-  color: white; }
+  color: white;
+}
+
 .view-front-page-events .contents-wrapper {
   padding-left: $left-pad;
-  background-color: #EAEAEA; }
+  background-color: #EAEAEA;
+}
+
 .view-front-page-events .event-wrapper {
   float: left;
-  width: 25%; }
+  width: 25%;
+}
+
 .view-front-page-events .event-wrapper > div {
-  margin-right: $left-pad; }
+  margin-right: $left-pad;
+}
+
 .view-front-page-events .event {
   padding: 1.75em 0;
-  color: #00639A; }
+  color: #00639A;
+}
 
 .view-front-page-events > h2 span {
   display: inline-block;
@@ -21,23 +30,29 @@
   padding-right: 30px;
   padding-left: 30px;
   padding-bottom: 3px;
-  background-color: $cool-blue; }
+  background-color: $cool-blue;
+}
 
 .view-front-page-events .field-fecha {
   padding-left: 43px;
   background-image: url("images/calendar.png");
   background-repeat: no-repeat;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-size: 13px;
   font-weight: 600;
-  color: $cool-blue; }
+  color: $cool-blue;
+}
+
 .view-front-page-events .field-fecha .field-content {
   position: relative;
-  height: 43px; }
+  height: 43px;
+}
+
 .view-front-page-events .field-fecha .field-content span {
   position: absolute;
   bottom: 0;
-  left: 6px; }
+  left: 6px;
+}
 
 .view-front-page-events .title a {
   display: block;
@@ -48,33 +63,44 @@
   font-size: 15px;
   font-weight: 600;
   color: #006AA4;
-  @extend %ellipsis; }
+
+  @extend %ellipsis;
+}
 
 .view-front-page-events .body {
   height: 44px;
   overflow: hidden;
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   font-size: 13px;
-  color: #4C4C4C; }
+  color: #4C4C4C;
+}
 
 .view-front-page-events .view-node a {
-  @include button-pill ($dark-blue);
+  @include button-pill($dark-blue);
+
   background-color: $cool-blue;
   border-color: $cool-blue;
-  font-size: 10px; }
+  font-size: 10px;
+}
+
 .view-front-page-events .view-node a:hover {
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
   border-color: $cool-blue;
   background: transparent;
-  color: $cool-blue; }
+  color: $cool-blue;
+}
 
 .view-front-page-events .more-link a {
   display: inline-block;
   padding: 6px 30px;
   background-color: $cool-blue;
-  color: white; }
+  color: white;
+}
+
 .view-front-page-events .more-link a:hover {
   background-color: white;
   color: $cool-blue;
   outline: 1px solid $cool-blue;
-  @include transition (background-color 1s); }
+
+  @include transition(background-color 1s);
+}

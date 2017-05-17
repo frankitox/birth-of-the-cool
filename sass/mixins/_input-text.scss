@@ -1,9 +1,11 @@
 %input-text {
   width: 18em;
   border: 0;
-  padding-top: .625em;
-  padding-bottom: .625em;
+  padding-top: 0.625em;
+  padding-bottom: 0.625em;
   padding-left: 1em;
-  
+
   &:focus {
-    outline: none; } }
+    outline: none;
+  }
+}

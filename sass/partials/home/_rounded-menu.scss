@@ -1,33 +1,44 @@
 #rounded-menu {
   margin: 1em;
-  margin-bottom: 1.75em; }
+  margin-bottom: 1.75em;
+}
 
 #rounded-menu ul {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+
 #rounded-menu li {
   list-style: none;
-  margin: 0; }
+  margin: 0;
+}
 
 #rounded-menu li {
   float: left;
-  width: 25%; }
+  width: 25%;
+}
 
 #rounded-menu li > div {
-  margin-right: 1em; }
+  margin-right: 1em;
+}
 
 #rounded-menu li a {
   display: block;
   position: relative;
   padding-top: 100%;
-  border-radius: 100%; }
+  border-radius: 100%;
+}
+
 #rounded-menu li a .outer-border {
-  @include expand ();
+  @include expand;
+
   border: 1px solid #D3D3D3;
   border-radius: 100%;
   background-color: #F3F3F3;
-  @include ghost-children ();
+
+  @include ghost-children;
 }
+
 #rounded-menu li a .inner-border {
   width: 82.5%;
   border-radius: 100%;
@@ -36,48 +47,73 @@
   display: inline-block;
   vertical-align: middle;
 }
+
 #rounded-menu li a .inner-border > div {
   border-radius: 100%;
   height: 100%;
-  @include ghost-children (); }
+
+  @include ghost-children;
+}
+
 #rounded-menu li a .content {
   display: inline-block;
   width: 80%;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 #rounded-menu li a .content i {
   color: $header-blue;
-  font-size: 48px; }
+  font-size: 48px;
+}
+
 #rounded-menu li a .content h1 {
   color: $header-blue;
+
   @extend %small-header;
+
   margin-top: -1em;
-  margin-bottom: .5em;
-  font-size: 16px; }
+  margin-bottom: 0.5em;
+  font-size: 16px;
+}
+
 #rounded-menu li a .content p {
-  margin-bottom: .5em;
+  margin-bottom: 0.5em;
   color: #636363;
-  font-size: 12px; }
+  font-size: 12px;
+}
+
 #rounded-menu li a .content span {
   font-size: 12px;
-  @include button-pill ($header-blue);
+
+  @include button-pill($header-blue);
+
   color: $header-blue;
   border-color: #388EC3;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 #rounded-menu li a:hover .inner-border {
-  transition: all .5s ease-in;
-  background-color: #009BEE; }
+  transition: all 0.5s ease-in;
+  background-color: #009BEE;
+}
+
 #rounded-menu li a:hover .inner-border i {
-  transition: all .2s ease-in;
-  color: white; }
+  transition: all 0.2s ease-in;
+  color: white;
+}
+
 #rounded-menu li a:hover .inner-border h1 {
-  transition: all .2s ease-in;
-  color: white; }
+  transition: all 0.2s ease-in;
+  color: white;
+}
+
 #rounded-menu li a:hover .inner-border span {
-  transition: all .2s ease-in;
+  transition: all 0.2s ease-in;
   border-color: white;
-  color: white; }
+  color: white;
+}
+
 #rounded-menu li a:hover .inner-border p {
-  transition: all .2s ease-in;
-  color: white; }
+  transition: all 0.2s ease-in;
+  color: white;
+}

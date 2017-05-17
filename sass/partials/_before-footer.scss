@@ -1,33 +1,59 @@
 #before-footer {
   padding: 1em 1.5em 1.5em $left-pad;
   color: white;
-  background-color: $dark-blue; }
+  background-color: $dark-blue;
+}
+
 #before-footer a {
-  color: white; }
+  color: white;
+}
+
 #before-footer .column {
   float: left;
-  width: 33.332%; }
+  width: 33.332%;
+}
+
 #before-footer .column.first {
   h1 {
     @extend %small-header;
-    margin-bottom: .125em;
+
+    margin-bottom: 0.125em;
     font-size: 15px;
-    color: white; }
+    color: white;
+  }
+
   p {
-    font-size: 13px; } }
+    font-size: 13px;
+  }
+}
+
 #before-footer .second.column {
   @extend %social-media;
-  text-align: center; }
+
+  text-align: center;
+}
+
 #before-footer .third.column {
-  text-align: right; }
+  text-align: right;
+}
+
 #before-footer .third.column a {
-  display: inline-block; }
+  display: inline-block;
+}
+
 #before-footer .third.column img {
   display: inline;
-  margin-right: .5em; }
+  margin-right: 0.5em;
+}
+
 #before-footer .third.column img.last-logo {
-  margin-right: 0; }
+  margin-right: 0;
+}
+
 #before-footer .third.column img#fceia-unr {
-  width: 125px; }
+  width: 125px;
+}
+
 #before-footer .third.column img#logo-unr {
-  width: 60px; }
+  width: 60px;
+}

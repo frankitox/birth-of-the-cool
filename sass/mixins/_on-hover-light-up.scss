@@ -1,4 +1,4 @@
-@mixin on-hover-light-up () {
+@mixin on-hover-light-up {
   &:hover {
     background-color: $light-blue;
     transition: background-color 1s;

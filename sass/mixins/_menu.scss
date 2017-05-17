@@ -1,6 +1,9 @@
-@mixin menu () {
+@mixin menu {
   & li {
-    list-style: none; }
-  
+    list-style: none;
+  }
+
   & li, & li a {
-    display: inline-block; } }
+    display: inline-block;
+  }
+}

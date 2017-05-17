@@ -4,61 +4,88 @@
   padding-left: $left-pad;
   padding-right: 1.5em;
   color: white;
-  background-color: $blue; }
+  background-color: $blue;
+}
 
 #header a {
-  color: white; }
+  color: white;
+}
 
 #logo-and-text {
-  @include ghost-children ();
+  @include ghost-children;
+
   text-align: left;
   padding-top: 1em;
   padding-bottom: 1em;
-  line-height: 1.25; }
+  line-height: 1.25;
+}
 
 #header a#logo,
 #header #name-and-slogan,
 #logo-and-text img {
   display: inline-block;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
 
 a#logo {
   display: inline-block;
   min-width: 157px;
   width: 11%;
-  padding-right: 2em; }
+  padding-right: 2em;
+}
+
 a#logo img {
   width: 100%;
-  margin-bottom: 5px; }
+  margin-bottom: 5px;
+}
+
 a#logo span {
-  font-weight: bold; }
+  font-weight: bold;
+}
 
 a#logo-lcc {
   display: inline-block;
   border-left: 1px solid white;
   padding-top: 10px;
   padding-bottom: 8px;
-  padding-left: 8px; }
+  padding-left: 8px;
+}
+
 a#logo-lcc img {
   min-width: 108px;
-  width: 7%; }
+  width: 7%;
+}
 
 #name-and-slogan {
   display: inline-block;
-  font-size: 10.86px; }
+  font-size: 10.86px;
+}
+
 #name-and-slogan #site-name {
-  display: none; }
+  display: none;
+}
 
 .uni-logos {
-  float: right; }
+  float: right;
+}
+
 .uni-logos a {
-  display: inline-block; }
+  display: inline-block;
+}
+
 .uni-logos img {
   display: inline;
-  margin-right: .5em; }
+  margin-right: 0.5em;
+}
+
 .uni-logos img.last-logo {
-  margin-right: 0; }
+  margin-right: 0;
+}
+
 .uni-logos img#fceia-unr {
-  width: 125px; }
+  width: 125px;
+}
+
 .uni-logos img#logo-unr {
-  width: 60px; }
+  width: 60px;
+}

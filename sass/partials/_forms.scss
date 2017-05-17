@@ -1,12 +1,16 @@
 form label {
   font-weight: 500;
-  color: $blue; }
+  color: $blue;
+}
 
 input[type=password],
 input[type=text] {
   color: #444;
-  padding: .4em;
-  border: 1px solid $blue; }
+  padding: 0.4em;
+  border: 1px solid $blue;
+}
+
 input[type=password].error,
 input[type=text].error {
-  border: 1px solid red; }
+  border: 1px solid red;
+}
