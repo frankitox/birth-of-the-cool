@@ -3,11 +3,11 @@
 /* myfont */
 @font-face {
   font-family: "myfont";
-  src:url("fonts/1457103149.eot");
-  src:url("fonts/1457103149.eot?#iefix") format("embedded-opentype"),
-    url("fonts/1457103149.woff") format("woff"),
-    url("fonts/1457103149.ttf") format("truetype"),
-    url("fonts/1457103149.svg#1457103149") format("svg");
+  src:url("fontastic.eot");
+  src:url("fontastic.eot?#iefix") format("embedded-opentype"),
+    url("fontastic.woff") format("woff"),
+    url("fontastic.ttf") format("truetype"),
+    url("fontastic.svg#1457103149") format("svg");
   font-weight: normal;
   font-style: normal;
 }

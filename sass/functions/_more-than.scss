@@ -1,16 +1,4 @@
 @charset "UTF-8";
 
-/// `more-than` It's a semantic helper for `@media`
-/// declarations. Takes a measure and returns the 
-/// string
-/// `(min-width: $measure)`
-///
-/// @author Franco Biasin
-/// @group übermensch-media-functions
-/// 
-/// @param {Measure} $measure
-///
-/// @return {String}
-
 @function more-than($measure) {
   @return '(min-width: #{$measure})'; }

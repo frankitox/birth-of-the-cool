@@ -1,5 +1,6 @@
-/// Uses $light-blue
 @mixin on-hover-light-up () {
   &:hover {
-  background-color: $light-blue;
-  @include transition (background-color 1s); } }
+    background-color: $light-blue;
+    transition: background-color 1s;
+  }
+}
