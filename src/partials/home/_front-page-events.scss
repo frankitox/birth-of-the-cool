@@ -102,5 +102,5 @@
   color: $cool-blue;
   outline: 1px solid $cool-blue;
 
-  @include transition(background-color 1s);
+  transition: background-color 1s;
 }

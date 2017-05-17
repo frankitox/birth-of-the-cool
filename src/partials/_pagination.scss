@@ -30,7 +30,7 @@ ul.pager li a:hover {
   color: white;
   background-color: $header-blue;
 
-  @include transition(all 1s);
+  transition: all 1s;
 }
 
 ul.pager li.pager-first a,
@@ -48,5 +48,5 @@ ul.pager li.pager-last a:hover {
   color: $header-blue;
   background-color: white;
 
-  @include transition(all 1s);
+  transition: all 1s;
 }
