@@ -1,12 +1,10 @@
 # How to code.
 
-  This project was set up using
-[this](http://thesassway.com/beginner/getting-started-with-sass-and-compass)
-article. Basically you should do `gem
-install compass`. Then you'll be able to
-execute the `compass watch` command over this
-directory to start checking changes in the
-`sass` folder.
+  Basically you need sass installed in your
+machine, I guess `gem install sass` should
+do the trick. And in the project's folder do
+a `sass --watch src:birth-of-the-cool` and
+you are ready to style!
 
 # Installing.
 
