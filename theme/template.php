@@ -3,7 +3,7 @@
 /**
   * Add hook for menu block
   */
-function birthofcool_theme
+function birthofthecool_theme
     (&$existing, $type, $theme, $path) {
   
   $hooks['user_login_block'] = array(
@@ -16,7 +16,7 @@ function birthofcool_theme
 /**
   * Add variables to the user login block.
   */
-function birthofcool_preprocess_user_login_block
+function birthofthecool_preprocess_user_login_block
     (&$vars) {
   
   $vars['name']     =
@@ -32,7 +32,7 @@ function birthofcool_preprocess_user_login_block
  * Add body classes if certain regions have
  * content.
  */
-function birthofcool_preprocess_html(&$variables) {
+function birthofthecool_preprocess_html(&$variables) {
   if (!empty($variables['page']['featured'])) {
     $variables['classes_array'][] = 'featured';
   }
@@ -62,7 +62,7 @@ function birthofcool_preprocess_html(&$variables) {
  * Override or insert variables into the page
  * template for HTML output.
  */
-function birthofcool_process_html(&$variables) {
+function birthofthecool_process_html(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_html_alter($variables);
@@ -72,7 +72,7 @@ function birthofcool_process_html(&$variables) {
 /**
  * Override or insert variables into the page template.
  */
-function birthofcool_process_page(&$variables) {
+function birthofthecool_process_page(&$variables) {
   // Hook into color.module.
   if (module_exists('color')) {
     _color_page_alter($variables);
@@ -109,7 +109,7 @@ function birthofcool_process_page(&$variables) {
 /**
  * Implements hook_preprocess_maintenance_page().
  */
-function birthofcool_preprocess_maintenance_page(&$variables) {
+function birthofthecool_preprocess_maintenance_page(&$variables) {
   // By default, site_name is set to Drupal if no db connection is available
   // or during site installation. Setting site_name to an empty string makes
   // the site and update pages look cleaner.
@@ -123,7 +123,7 @@ function birthofcool_preprocess_maintenance_page(&$variables) {
 /**
  * Override or insert variables into the maintenance page template.
  */
-function birthofcool_process_maintenance_page(&$variables) {
+function birthofthecool_process_maintenance_page(&$variables) {
   // Always print the site name and slogan, but if they are toggled off, we'll
   // just hide them visually.
   $variables['hide_site_name']   = theme_get_setting('toggle_name') ? FALSE : TRUE;
@@ -141,7 +141,7 @@ function birthofcool_process_maintenance_page(&$variables) {
 /**
  * Override or insert variables into the node template.
  */
-function birthofcool_preprocess_node(&$variables) {
+function birthofthecool_preprocess_node(&$variables) {
   if ($variables['view_mode'] == 'full' && node_is_page($variables['node'])) {
     $variables['classes_array'][] = 'node-full';
   }
@@ -150,7 +150,7 @@ function birthofcool_preprocess_node(&$variables) {
 /**
  * Override or insert variables into the block template.
  */
-function birthofcool_preprocess_block(&$variables) {
+function birthofthecool_preprocess_block(&$variables) {
   // In the header region visually hide block titles.
   if ($variables['block']->region == 'header') {
     $variables['title_attributes_array']['class'][] = 'element-invisible';
@@ -160,14 +160,14 @@ function birthofcool_preprocess_block(&$variables) {
 /**
  * Implements theme_menu_tree().
  */
-function birthofcool_menu_tree($variables) {
+function birthofthecool_menu_tree($variables) {
   return '<ul class="menu clearfix">' . $variables['tree'] . '</ul>';
 }
 
 /**
  * Implements theme_field__field_type().
  */
-function birthofcool_field__taxonomy_term_reference($variables) {
+function birthofthecool_field__taxonomy_term_reference($variables) {
   $output = '';
 
   // Render the label, if it's not hidden.
@@ -188,14 +188,14 @@ function birthofcool_field__taxonomy_term_reference($variables) {
   return $output;
 }
 
-function birthofcool_preprocess_page(&$variables){
+function birthofthecool_preprocess_page(&$variables){
   $variables['login_menu'] =
     menu_navigation_links('menu-login-menu');
   $variables['rounded_menu'] =
     menu_navigation_links('menu-rounded-menu');
 }
 
-function birthofcool_links__menu_login_menu ($variables) {
+function birthofthecool_links__menu_login_menu ($variables) {
   $html = "<div>\n";
   $html .= "  <ul>\n";
   foreach ($variables['links'] as $link) {
@@ -214,7 +214,7 @@ function birthofcool_links__menu_login_menu ($variables) {
   
   return $html; }
 
-function birthofcool_links__locale_block(&$vars) {
+function birthofthecool_links__locale_block(&$vars) {
   global $language;
   
   $html =  "<ul>\n";
@@ -236,7 +236,7 @@ function birthofcool_links__locale_block(&$vars) {
 
 // TODO: Check if there's another way of doing
 // this. Must be a render function in Drupal.
-function birthofcool_links__menu_rounded_menu ($variables) {
+function birthofthecool_links__menu_rounded_menu ($variables) {
   $icons = array ("laptop", "edit-paper",
                   "people", "envelope-inverse");
   $i     = 0; # icons index.
