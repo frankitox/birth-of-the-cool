@@ -89,6 +89,9 @@
       </h1>
       <?php print render($content['field_codigo']); ?>
     </div>
+    <div class="field-name-field-plan" style="padding: 0 0 0 10px">
+      <?php print l(t('Archivos'), drupal_get_path_alias() . '/archivos'); ?>
+    </div>
     <?php print render($content['field_plan']) ?>
   </div>
   <?php endif; ?>
