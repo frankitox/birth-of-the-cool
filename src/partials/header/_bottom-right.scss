@@ -1,8 +1,13 @@
 .region-header-bottom-right {
-  position: absolute;
-  bottom: 0.125em;
-  right: 1em;
+  margin-bottom: 1em;
   text-align: right;
+
+  @media screen and (min-width: 1150px) {
+    position: absolute;
+    bottom: 0.125em;
+    right: 1em;
+    margin-bottom: 0;
+  }
 }
 
 .region-header-bottom-right input[type=text] {

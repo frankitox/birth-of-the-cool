@@ -12,7 +12,6 @@
     <a href="<?= $front_page; ?>"
        title="<?= t('Home'); ?>"
        rel="home" id="logo">
-      
       <img src="<?= $logo; ?>"
            alt="<?= t('Home'); ?>">
       <?php if ($site_slogan): ?>
@@ -84,6 +83,10 @@
     </div>
   </div><!-- #logo-and-text -->
 
+  <?php if ($page['header_bottom_right']): ?>
+  <?= render($page['header_bottom_right']); ?>
+  <?php endif; ?>
+
   <?php if ($main_menu): ?>
     <div id="main-menu" class="navigation">
       <?= theme('links__system_main_menu', array(
@@ -99,10 +102,6 @@
         ),
       )); ?>
     </div><!-- #main-menu -->
-  <?php endif; ?>
-
-  <?php if ($page['header_bottom_right']): ?>
-  <?= render($page['header_bottom_right']); ?>
   <?php endif; ?>
 
   <div id="upper-content" class="clearfix">

@@ -67,6 +67,10 @@ a#logo-lcc img {
 
 .uni-logos {
   float: right;
+
+  @media screen and (max-width: 850px) {
+    display: none;
+  }
 }
 
 .uni-logos a {
